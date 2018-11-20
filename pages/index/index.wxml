@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <view class="usermotto">
-  <text class="user-motto">项目初始，测试</text>
+  <text class="user-motto">00项目初始，测试</text>
     <text class="user-motto">{{motto}}</text>
     <text class="user-motto">000{{userInfo.nickName}}</text>
     <!-- <a href="detail.wxml">点我跳链接诶</a> -->
