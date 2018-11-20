@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="usermotto">
+  <text class="user-motto">项目初始，测试</text>
+    <text class="user-motto">{{motto}}</text>
+    <text class="user-motto">000{{userInfo.nickName}}</text>
+    <!-- <a href="detail.wxml">点我跳链接诶</a> -->
+    <view class='aa'> <map></map></view>  
+    <!-- <navigator bindtap='aa' open-type="redirect">新页面</navigator>  -->
+    <navigator url="../detail/detail?title=我是navi">跳转到新的页面00</navigator>
+    <div>我是div的内容</div>
+    <text>我是text的内容</text>  
+    <image class="widget__arrow" src="../image/weifa.jpg" mode="aspectFill"> </image>  
+    
+  </view>
+  <view>
+    <input type='text' class='userBox' name='username' placeholder="输入姓名"></input>
+    <view>普通选择器</view>
+    <!--mode默认selector range数据源value选择的index bindchange事件监听-->
+    <picker mode="selector" range="100" value="测试的">
+        <text>测试</text>
+    </picker>
+    <tagname property="value">
+        Content goes here ...
+    </tagname>
+  </view>
+
+<icon size="50" type="success"></icon>
+
+<!-- 可以将网站嵌套过来 -->
+<!-- <web-view src="http://www.manro.com.cn/"></web-view> -->
+
+<!-- <iframe src="http://www.manro.com.cn/"  frameborder="0">跳外链</iframe> -->
+
+<!-- <navigator url="http://www.manro.com.cn/">跳转到新的页面</navigator> -->
+
+<!-- 域名需要在管理后台配置，（申请微信需要有id，） -->
+
+
+    <swiper height='150' class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item width='100%' height='150'>
+                <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="slide-image" mode="aspectFill" />
+            </swiper-item>
+        </block>
+    </swiper>
+
+
+
+</view>
+
+
+
