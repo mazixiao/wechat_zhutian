@@ -1,0 +1,19 @@
+<import src="../header/header"/>
+<template is="header"></template>
+
+
+<!--index.wxml-->
+<view class="container">
+
+<text class='test' bindtap="changeName"> 1111</text>
+<text class='test22' bindtap="changeName">{{motto}}</text>
+
+
+
+
+
+
+</view>
+
+
+

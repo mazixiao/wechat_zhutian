@@ -1,0 +1,8 @@
+
+
+<template name="header">
+  <text class='headers'>我是公共头部</text>
+</template>
+
+
+

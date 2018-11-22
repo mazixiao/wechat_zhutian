@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
 	"appid": "wx264613a85971b4cd",
-	"projectname": "wechat",
+	"projectname": "wechat_zhutian",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

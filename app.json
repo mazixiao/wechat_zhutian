@@ -1,8 +1,7 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/detail/detail"
+    "pages/components/index/index",
+    "pages/components/header/header"
   ],
   "window":{
     "backgroundTextStyle":"light",

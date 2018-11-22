@@ -1,0 +1,9 @@
+
+
+/**index.wxss**/
+@import "../../assets/wxss/common.wxss";
+
+.headers {
+  background-color: green;
+}
+
