@@ -1,18 +1,26 @@
 
 
-<!-- 公共头部组件 -->
-<template name="header">
-	<view class='headers'>
-		 <navigator class='logo' url="../index/index" hover-class="none">
-			<image src="../../assets/img/logo2.png"></image>
-		 </navigator>
-		<view class="phone_nav_switch">
-		    <i class="iconfont icon-daohang"></i>
-		    <i class="iconfont icon-guanbi" style='display: none'></i>
-		</view>
 
+<!-- 公共头部组件 -->
+<view class='headers'>
+	 <navigator class='logo' url="../index/index" hover-class="none">
+		<image src="../../assets/img/logo2.png"></image>
+	 </navigator>
+	<view class="phone_nav_switch" bindtap="controlNav">
+	    <view class="iconfont icon-daohang" hidden="{{navIsShow}}"></view>
+	    <view class="iconfont icon-guanbi" hidden="{{!navIsShow}}"></view>
 	</view>
-</template>
+	<view class="nav">
+		<view class="shadow {{navIsShow ? 'active':''}}" bindtap="controlNav"></view>
+		<view class="bg {{navIsShow ? 'active':''}}">
+			<view class='con' wx:for="{{navs}}" wx:key="item.url">
+				 <navigator url="{{item.url}}" hover-class="none">
+					{{item.text}}
+				 </navigator>
+			</view>
+		</view>
+	</view>
+</view>
 
 
 

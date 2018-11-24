@@ -13,6 +13,7 @@
   padding-right: 10px;
   box-sizing: border-box;
   border-bottom: 1px solid #eee;
+  z-index: 100;
 }
 
 .headers .logo {
@@ -40,7 +41,7 @@
 
 .phone_nav_switch .iconfont {
 	position: absolute;
-	font-size: 36px;
+	font-size: 32px;
 	color: #4d7435;
 	top: 52%;
 	left: 50%;
@@ -49,6 +50,51 @@
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+.nav .shadow {
+	position: fixed;
+	top: 45px;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+	z-index: 80px;
+	transition: all 0.4s;
+	width: 0;
+}
+.nav .shadow.active {
+  width: 100%;
+}
+
+.nav .bg {
+  position: fixed;
+  top: 45px;
+  right: -80%;
+  width: 80%;
+  height: 100%;
+  background-color: #504f53;
+  z-index: 85px;
+  transition: all 0.4s;
+}
+
+.nav .bg.active {
+  right: 0;
+}
+
+.nav .bg .con {
+	width: 100%;
+}
+.nav .bg .con navigator {
+	height: 40px;
+	line-height: 40px;
+	background: #000;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 10px;
+	border-bottom: 1px solid #444;
+	color: #fff;
+	font-size: 14px;
 }
 
 	

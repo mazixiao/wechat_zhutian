@@ -1,53 +1,21 @@
-<import src="../header/header"/>
-<template is="header"></template>
 
 
-<!--index.wxml-->
-<view class="container">
 
-<text class='test' bindtap="changeName"> 1111</text>
-<text class='test22' bindtap="changeName">{{motto}}</text>
+<view class="index">
+    <view class='header'> 
+        <header></header>
+    </view>
 
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
- <text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>   
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text> 
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text>    
-<text>dsd</text> 
+
+<view>首页</view>
+<view>首页</view>
+<view>首页</view>
+<view>首页</view>
+<view>首页</view>
+<view>首页</view>
+<view>首页</view>
+
+
 
 
 </view>

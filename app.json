@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/components/index/index",
-    "pages/components/header/header"
+    "pages/components/header/header",
+    "pages/components/join/join"
   ],
   "window":{
     "backgroundTextStyle":"light",
