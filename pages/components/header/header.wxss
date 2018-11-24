@@ -1,9 +1,54 @@
 
 
-/**index.wxss**/
+/*基础样式*/
 @import "../../assets/wxss/common.wxss";
 
 .headers {
-  background-color: green;
+  background-color: #fff;
+  /* background-color: red; */
+  height: 45px;
+  position: fixed;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
 }
 
+.headers .logo {
+	display: inline-block;
+  margin-top: 3px;
+}
+
+.headers .logo image {
+	width: 70px;
+	height: 38px;
+}
+
+.phone_nav_switch {
+	height: 100%;
+	width: 60px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	z-index: 2;
+	/* background-color: yellow; */
+}
+
+.phone_nav_switch .iconfont {
+	position: absolute;
+	font-size: 36px;
+	color: #4d7435;
+	top: 52%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+	

@@ -1,7 +1,17 @@
 
 
+<!-- 公共头部组件 -->
 <template name="header">
-  <text class='headers'>我是公共头部</text>
+	<view class='headers'>
+		 <navigator class='logo' url="../index/index" hover-class="none">
+			<image src="../../assets/img/logo2.png"></image>
+		 </navigator>
+		<view class="phone_nav_switch">
+		    <i class="iconfont icon-daohang"></i>
+		    <i class="iconfont icon-guanbi" style='display: none'></i>
+		</view>
+
+	</view>
 </template>
 
 
