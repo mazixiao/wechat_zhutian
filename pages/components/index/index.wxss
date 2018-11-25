@@ -55,4 +55,39 @@
 	transform: translate(-50%, -50%);
 }
 
+.video_con {
+	position: relative;
+	z-index: 201;
+}
 
+.video_con .shadow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0 ,0.5);
+}
+
+.videoss {
+	width: 95%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 230px;	
+	overflow: hidden;
+}
+.video_con video {
+	width: 100%;
+	height: 100%;
+}
+
+.video_con .small {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 13px;
+	height: 19px;
+}
