@@ -11,11 +11,48 @@
 }
 
 
-text {
-  background-color: red;
-  margin-top: 60px;
+.swiper_con {
+	position: relative;
+}
+.swiper {
+	margin-top: 45px;
+	width: 100%;
+	height: 240px;
+	
 }
 
+.swiper swiper-item {
+	width: 100%;
+}
+.swiper swiper-item image {
+	width: 100%;
+	height: 100%;
+}
 
+.swiper_con .small_video {
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	border: 2px solid #fff;
+	left: 5px;
+	bottom: 5px;
+	z-index: 2;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.swiper_con .small_video .big {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper_con .small_video .small {
+	width: 10.4px;
+	height: 15.2px;
+	position: absolute;
+	top: 50%;
+	left: 53%;
+	transform: translate(-50%, -50%);
+}
 
 

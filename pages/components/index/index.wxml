@@ -2,23 +2,26 @@
 
 
 <view class="index">
+	<!-- 头部组件 -->
     <view class='header'> 
         <header></header>
     </view>
 
 
-<view>首页</view>
-<view>首页</view>
-<view>首页</view>
-<view>首页</view>
-<view>首页</view>
-<view>首页</view>
-<view>首页</view>
-
-
-
-
+	<view class='swiper_con'>
+		<swiper class='swiper' indicator-dots="{{indicatorDots}}" indicator-color="{{other}}" indicator-active-color="{{active}}"
+		autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"  circular='{{circular}}'>
+			<block wx:for="{{imgUrls}}" wx:key='item'>
+				<swiper-item>
+					<image src="{{item}}" class="slide-image"/>
+				</swiper-item>
+			</block>
+		</swiper>
+		<view class="small_video">
+			<image class='big' src="../../assets/img/small_video.jpg" alt=""/>
+			<image class="small" src="../../assets/img/small_zanting.png" alt=""/>
+		</view>
+	</view>
 </view>
-
 
 
