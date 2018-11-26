@@ -244,3 +244,12 @@
   font-size: 12px;
   line-height: 22px;
 }
+
+
+.video_test {
+  margin-top: 20px;
+}
+
+.video_test .big {
+  width: 50%;
+}

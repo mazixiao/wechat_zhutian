@@ -30,6 +30,21 @@
 		</view>
 	</view>
 
+<view class='video_test'>
+  <view class='list'>
+    <image class='big' wx:key='item' wx:for='{{video_test}}' data-url='{{item.url}}' bindtap='videoPlay' mode="widthFix" src="{{item.img}}" alt=""/>
+  </view>
+  <video id='video22' objectFit='cover' binderror="binderror" controls   poster='../../assets/img/swiper.jpg' src="{{textVideo}}" ></video>
+</view>
+
+
+<view>占位</view>
+<view>占位</view>
+<view>占位</view>
+<view>占位</view>
+<view>占位</view>
+<view>占位</view>
+<view>占位</view>
 	<view class="about">
 		<view class="common_tit">
 			<view class="common_tit_con">关于煮田</view>
@@ -81,7 +96,7 @@
 			</view>
 			<view class="tab_con">
 				<view class="item" wx:for='{{food.tab.con}}' wx:key='item'>
-					<image wx:for='{{item}}' wx:key='list' wx:for-item="list" src="{{list}}" alt=""/>
+					<!-- <image wx:for='{{item}}' wx:key='list' wx:for-item="list" src="{{list}}" alt=""/> -->
 				</view>
 			</view>
 		</view>
@@ -102,13 +117,7 @@
 <view>占位</view>
 <view>占位</view>
 <view>占位</view>
-<view>占位</view>
-<view>占位</view>
-<view>占位</view>
-<view>占位</view>
-<view>占位</view>
-<view>占位</view>
-<view>占位</view>
+
 
 </view>
 
