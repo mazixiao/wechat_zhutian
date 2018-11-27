@@ -81,7 +81,7 @@
 			</view>
 			<view class="tab_con">
 				<view class="item" wx:for='{{food.tab.con}}' wx:key='item'>
-					<!-- <image wx:for='{{item}}' wx:key='list' wx:for-item="list" src="{{list}}" alt=""/> -->
+					<image wx:for='{{item}}' wx:key='list' wx:for-item="list" src="{{list}}" alt=""/>
 				</view>
 			</view>
 		</view>
@@ -96,6 +96,33 @@
 <view>占位</view>
 <view>占位</view>
 <view>占位</view>
+
+
+<view class="tab-left" > 
+  <view class="{{tabArr.curHdIndex=='0'? 'active' : ''}}" id="0"  data-id="0" bindtap="tab">多种汤底</view> 
+  <view class="{{tabArr.curHdIndex=='1'? 'active' : ''}}" id="1"  data-id="1" bindtap="tab">特色食材</view> 
+  <view class="{{tabArr.curHdIndex=='2'? 'active' : ''}}" id="2"  data-id="2" bindtap="tab">美味小食</view> 
+  <view class="{{tabArr.curHdIndex=='3'? 'active' : ''}}" id="3"  data-id="3" bindtap="tab">清爽饮品</view> 
+</view> 
+ <view>占位</view>
+<view>占位</view>
+<view class="tab-right"> 
+  <view class="right-item {{tabArr.curBdIndex=='0'? 'active' : ''}}">
+    <image src="../../assets/img/food1.jpg" alt=""/>11
+  </view> 
+  <view class="right-item {{tabArr.curBdIndex=='1'? 'active' : ''}}">
+    <image src="../../assets/img/food2.jpg" alt=""/>22
+  </view> 
+  <view class="right-item {{tabArr.curBdIndex=='2'? 'active' : ''}}">
+    <image src="../../assets/img/food3.jpg" alt=""/>33
+  </view> 
+  <view class="right-item {{tabArr.curBdIndex=='3'? 'active' : ''}}">
+    <image src="../../assets/img/food4.jpg" alt=""/>44
+  </view> 
+</view>
+
+
+
 <view>占位</view>
 <view>占位</view>
 <view>占位</view>

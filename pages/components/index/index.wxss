@@ -245,3 +245,6 @@
   line-height: 22px;
 }
 
+.tab-left .active{color: #ff0000}
+.tab-right .right-item{display: none}
+.tab-right .right-item.active{display: block}
