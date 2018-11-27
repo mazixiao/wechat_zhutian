@@ -96,24 +96,16 @@ Page({
     			[
     				'../../assets/img/food1.jpg',
     				'../../assets/img/food2.jpg',
-    				'../../assets/img/food3.jpg',
-    				'../../assets/img/food4.jpg',
     			],
     			[
-    				'../../assets/img/food1.jpg',
-    				'../../assets/img/food3.jpg',
     				'../../assets/img/food2.jpg',
-    				'../../assets/img/food4.jpg',
+    				'../../assets/img/food1.jpg',
     			],
     			[
     				'../../assets/img/food1.jpg',
     				'../../assets/img/food2.jpg',
-    				'../../assets/img/food4.jpg',
-    				'../../assets/img/food3.jpg',
     			],
     			[
-    				'../../assets/img/food4.jpg',
-    				'../../assets/img/food3.jpg',
     				'../../assets/img/food2.jpg',
     				'../../assets/img/food1.jpg',
     			]
@@ -125,6 +117,32 @@ Page({
       curHdIndex: 0,
       curBdIndex: 0
     }, 
+    tab: {
+      tit: [
+        '多种汤底',
+        '特色食材',
+        '美味小食',
+        '清爽饮品',
+      ],
+      con: [
+        [
+          '../../assets/img/food1.jpg',
+          '../../assets/img/food2.jpg',
+        ],
+        [
+          '../../assets/img/food2.jpg',
+          '../../assets/img/food1.jpg',
+        ],
+        [
+          '../../assets/img/food1.jpg',
+          '../../assets/img/food2.jpg',
+        ],
+        [
+          '../../assets/img/food2.jpg',
+          '../../assets/img/food1.jpg',
+        ],
+      ]
+    }
 
   },
 
@@ -137,7 +155,6 @@ Page({
     this.setData({
       tabArr: obj
     })
-    //console.log(e);
   },
 
 
