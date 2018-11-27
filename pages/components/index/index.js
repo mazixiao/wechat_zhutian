@@ -88,29 +88,6 @@ Page({
     		one: '多种口味麻辣烫/一锅一煮全新体验/打造盈利模式第一品牌',
     		two: '煮田农场麻辣烫--阿香米线旗下品牌。从田野到餐桌，实现麻辣烫的”品质健康“新升级。每一种食材，都足够新鲜，每一种味道，都用心调制。\n搭配酥肉、糍粑等小吃及特质饮品及樱花冰粉，新鲜制作，打造轻食健康麻辣烫。'
     	},
-    	tab: {
-    		tit: [
-    			'多种汤底', '特色食材', '美味小食', '清爽饮品'
-    		],
-    		con: [
-    			[
-    				'../../assets/img/food1.jpg',
-    				'../../assets/img/food2.jpg',
-    			],
-    			[
-    				'../../assets/img/food2.jpg',
-    				'../../assets/img/food1.jpg',
-    			],
-    			[
-    				'../../assets/img/food1.jpg',
-    				'../../assets/img/food2.jpg',
-    			],
-    			[
-    				'../../assets/img/food2.jpg',
-    				'../../assets/img/food1.jpg',
-    			]
-    		]
-    	}
     },
     // tab 切换
     tabArr: {
