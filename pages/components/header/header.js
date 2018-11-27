@@ -44,7 +44,10 @@ Component({
         text: '联系我们',
         url: '../contact/contact'
       },
-
+      {
+        text: '视频列表',
+        url: '../videoItem/videoItem'
+      },
 
 
     ]

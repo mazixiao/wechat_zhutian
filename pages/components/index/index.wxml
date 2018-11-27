@@ -30,21 +30,6 @@
 		</view>
 	</view>
 
-<view class='video_test'>
-  <view class='list'>
-    <image class='big' wx:key='item' wx:for='{{video_test}}' data-url='{{item.url}}' bindtap='videoPlay' mode="widthFix" src="{{item.img}}" alt=""/>
-  </view>
-  <video id='video22' objectFit='cover' binderror="binderror" controls   poster='../../assets/img/swiper.jpg' src="{{textVideo}}" ></video>
-</view>
-
-
-<view>占位</view>
-<view>占位</view>
-<view>占位</view>
-<view>占位</view>
-<view>占位</view>
-<view>占位</view>
-<view>占位</view>
 	<view class="about">
 		<view class="common_tit">
 			<view class="common_tit_con">关于煮田</view>

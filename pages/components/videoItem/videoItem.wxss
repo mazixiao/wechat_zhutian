@@ -1,0 +1,62 @@
+
+
+/*基础样式*/
+@import "../../assets/wxss/common";
+/*公共头部样式*/
+@import "../header/header";
+
+
+
+
+
+.video_item {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.video_item .video_tit {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.video_item .list .big {
+  width: 100%;
+}
+
+.video_item .list {
+  margin-bottom: 10px;
+}
+.video_item .list .text {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: -3px;
+}
+
+.container {
+  position: relative;
+  z-index: 200;
+}
+
+.container .shadow {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.container #video22 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  width: 95%;
+}

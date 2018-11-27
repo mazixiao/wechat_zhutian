@@ -1,0 +1,27 @@
+
+
+
+<view class="videoItem">
+    <!-- 公共头部 -->
+    <view class='header'> 
+        <header></header>
+    </view>
+
+    <!-- 视频列表 -->
+    <view class='video_item'>
+      <view class='video_tit'>视频列表</view>
+      <view class='list' wx:key='item' wx:for='{{video_test}}' bindtap='videoPlay'>
+      <image class='big'  data-url='{{item.url}}'  mode="widthFix" src="{{item.img}}" alt=""/>
+      <view class='text'>{{item.text}}</view>
+      </view>
+
+      <view class='container' hidden='{{isShowVideo}}'>
+      <view class='shadow' bindtap='videoPause'></view>
+      <video id='video22' objectFit='cover' binderror="binderror" controls   poster='../../assets/img/swiper.jpg' src="{{videoSrc}}" ></video>
+      </view>
+    </view>
+
+</view>
+
+
+

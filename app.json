@@ -7,7 +7,8 @@
     "pages/components/contact/contact",
     "pages/components/food/food",
     "pages/components/news/news",
-    "pages/components/search/search"
+    "pages/components/search/search",
+    "pages/components/videoItem/videoItem"
   ],
   "window":{
     "backgroundTextStyle":"light",
