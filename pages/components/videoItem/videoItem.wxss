@@ -30,7 +30,19 @@
 
 .video_item .list {
   margin-bottom: 10px;
+  position: relative;
+   width: 100%;
 }
+.video_item .list .zanting {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 56px;
+}
+
+
 .video_item .list .text {
   font-size: 14px;
   line-height: 26px;

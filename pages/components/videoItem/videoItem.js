@@ -39,7 +39,7 @@ Page({
   // 点击当前元素播放视频
   videoPlay: function (e) {
     //获取点击元素的视频路径
-    var videoSrc = e.target.dataset.url;
+    var videoSrc = e.currentTarget.dataset.url;
     this.setData({
       videoSrc: videoSrc,
       isShowVideo: false,
