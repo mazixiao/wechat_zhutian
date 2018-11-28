@@ -26,7 +26,7 @@
 	<view class="video_con" hidden='{{videoHide}}'>
 		<view class="shadow" bindtap='pauseViode'></view>
 		<view class="videoss" bindtap='controlPlay'>
-			<video id='video' objectFit='cover' controls   poster='../../assets/img/swiper.jpg' src="{{videoSrc}}" ></video>
+			<video wx:if='{{videoSrc}}' id='video' objectFit='cover' controls   poster='../../assets/img/swiper.jpg' src="{{videoSrc}}" ></video>
 		</view>
 	</view>
 

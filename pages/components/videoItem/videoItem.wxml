@@ -17,7 +17,7 @@
 
       <view class='container' hidden='{{isShowVideo}}'>
       <view class='shadow' bindtap='videoPause'></view>
-      <video id='video22' objectFit='cover' binderror="binderror" controls   poster='../../assets/img/swiper.jpg' src="{{videoSrc}}" ></video>
+      <video id='video22' wx:if='{{videoSrc}}'  objectFit='cover' binderror="binderror" controls   poster='../../assets/img/swiper.jpg' src="{{videoSrc}}" ></video>
       </view>
     </view>
 
