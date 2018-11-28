@@ -62,11 +62,6 @@
 		</view>
 	</view>
 
-
-
-
-
-
 <view class="food">
 		<view class="common_tit">
 			<view class="common_tit_con">煮田美食</view>
@@ -88,8 +83,52 @@
     </view>
 
 
+<!-- 农场形象 -->
+<view class="farm">
+		<view class="common_tit">
+			<view class="common_tit_con">农场形象</view>
+		</view>
+		<view class="introduct">
+			<view class="text" >
+				{{farm.text}} 
+			</view>
+			<view class="more">
+				<navigator url='../about/about'>
+					<text>了解更多</text> >
+				</navigator>
+			</view>
+		</view>
+		<view class="swiper2">
+      <swiper class='swiper' indicator-dots="{{indicatorDots}}" indicator-color="{{swiperOther}}" indicator-active-color="{{swiperActive}}"
+      autoplay="{{swiperAutoplay}}" interval="{{interval}}" duration="{{duration}}"  circular='{{loop}}'>
+        <block wx:for="{{farm.swiper}}" wx:key='item'>
+          <swiper-item>
+            <image src="{{item}}" mode="widthFix" class="slide-image"/>
+          </swiper-item>
+        </block>
+      </swiper>
+		</view>
+</view>
 
 
+<!-- 联系我们 -->
+<view class="contact">
+	<view class="common_tit">
+		<view class="common_tit_con">联系我们</view>
+	</view>
+    <view class="info">
+        <input id="names" type="text" placeholder="姓名" />
+        <input id="phone" type="text" placeholder="手机" />
+        <input id="email" type="text" placeholder="邮箱" />
+        <input id="want" type="text" placeholder="意向区域" />
+    </view>
+    <view class="commit">
+        <view>提交</view>
+    </view>
+</view>
+
+<!-- alert -->
+<!-- http://www.php.cn/xiaochengxu-384216.html -->
 
 
   <view>占位</view>
@@ -106,5 +145,6 @@
   <view>占位</view>
 
 </view>
+
 
 

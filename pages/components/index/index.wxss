@@ -284,3 +284,94 @@
 .tab .tab_con .con_item image:nth-child(2n) {
   margin-right: 0;
 }
+
+.farm {
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.farm  .introduct {
+  margin-bottom: 15px;
+}
+.farm  .introduct .text {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 22px;
+}
+.farm .introduct .more {
+  text-align: center;
+}
+.farm .introduct .more navigator {
+  border: 1px solid #4d7435;
+  font-size: 12px;
+  padding: 3px 25px;
+  display: inline-block;
+  background: #4d7435;
+  border-radius: 20px;
+  color: #fff;
+}
+.farm .introduct .more navigator text {
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.farm .swiper2 {
+	position: relative;
+}
+
+.farm .swiper2 .swiper {
+	height: 192px;
+	margin-top: 10px;
+}
+
+.contact {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(234, 210, 182);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.contact .info {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.contact .info input {
+	box-sizing: border-box;
+	border-radius: 22.5px;
+	background: rgba(255,255,255,0.5);
+	color: #999;
+	height: 45px;
+	font-size: 12px;
+	padding-left: 15px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.contact .commit {
+	text-align: center;
+}
+.contact .commit view {
+	display: inline-block;
+	background: #4d7435;
+	border-radius: 22px;
+	border: 1px solid #4d7435;
+	font-size: 12px;
+	padding: 10px 40px;
+  color: #fff;
+}
+
