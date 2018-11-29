@@ -117,15 +117,23 @@
 		<view class="common_tit_con">联系我们</view>
 	</view>
     <view class="info">
-        <input id="names" type="text" placeholder="姓名" />
-        <input id="phone" type="text" placeholder="手机" />
-        <input id="email" type="text" placeholder="邮箱" />
-        <input id="want" type="text" placeholder="意向区域" />
+        <input bindinput="names" id="names" type="text" placeholder="姓名" />
+        <input bindinput="phone" id="phone" type="text" placeholder="手机" />
+        <input bindinput="email" id="email" type="text" placeholder="邮箱" />
+        <input bindinput="want" id="want" type="text" placeholder="意向区域" />
     </view>
     <view class="commit">
-        <view>提交</view>
+        <view bindtap='commit'>提交</view>
     </view>
+    <!-- alert框 -->
+	<modal hidden="{{alertShadow}}" confirm-text="确定" cancel-text="返回" bindconfirm="bindconfirm" bindcancel="bindconfirm">{{alertCon}}</modal>
+
 </view>
+
+
+
+
+
 
 <!-- alert -->
 <!-- http://www.php.cn/xiaochengxu-384216.html -->

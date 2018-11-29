@@ -126,10 +126,23 @@ Page({
 			'../../assets/img/about1.jpg',
 			'../../assets/img/about1.jpg',
     	]
-    }
+    },
+    // alert遮罩
+    alertShadow: true,
+    // alert文字提示
+    alertCon: '',
+    // 获取姓名
+    names: '',
+    // 获取手机
+    phone: '',
+    // 获取邮箱
+    email: '',
+    //意向区域
+    want: '',
 
   },
 
+  //tab切换
   tab: function (e) {
     //var dataId = e.currentTarget.dataset.id;
     var dataId = e.currentTarget.id;
@@ -141,14 +154,6 @@ Page({
     })
   },
 
-
-
-// 测试
-changeName:function(e){
-  this.setData({
-    navIsShow: !this.data.navIsShow
-  });
-},
 
 //视频播放
 playVideo: function() {
@@ -170,9 +175,92 @@ pauseViode: function() {
 
 
 
+// 点击alert框中的确定
+bindconfirm: function() {
+	this.setData({
+		alertShadow: true,
+	});
+},
+// 获取input框姓名的值
+names: function(e){
+	this.setData({
+		names: e.detail.value.replace(/\s+/g, '')
+	});
+},
+// 获取input框手机号
+phone: function(e){
+	this.setData({
+		phone: e.detail.value.replace(/\s+/g, '')
+	});
+},
+// 获取input框邮箱
+email: function(e){
+	this.setData({
+		email: e.detail.value.replace(/\s+/g, '')
+	});
+},
+// 获取input框意向区域
+want: function(e){
+	this.setData({
+		want: e.detail.value.replace(/\s+/g, '')
+	});
+},
 
 
+commit:function() {
+	// 手机号码验证
+    var phoneInput = /^[1][3,4,5,7,8][0-9]{9}$/;
+    // 邮箱验证
+    var emailInput = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
 
+	var names = this.data.names;
+	var phone = this.data.phone;
+	var email = this.data.email;
+	var want = this.data.want;
+	if(!names) {
+		this.setData({
+			alertShadow: false,
+			alertCon: '请输入姓名!',
+		});
+		return;
+	};
+	if(!phoneInput.test(phone)) {
+		this.setData({
+			alertShadow: false,
+			alertCon: '请输入正确的手机格式!',
+		});
+		return;
+	};
+	if(!emailInput.test(email)) {
+		this.setData({
+			alertShadow: false,
+			alertCon: '请输入正确的邮箱格式!',
+		});
+		return;
+	};
+	if(!want) {
+		this.setData({
+			alertShadow: false,
+			alertCon: '请意向区域!',
+		});
+		return;
+	};
+	this.setData({
+		alertShadow: false,
+		alertCon: '提交成功!',
+	});
+
+},
+
+
+// function checkEmail(email){
+//     var re = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
+//     if (!re.test(email)) {
+//         alert("邮箱有误，请重填");
+//         return false;
+//     }
+//     return email;
+// }
 
 
  //当页面改变是会触发
