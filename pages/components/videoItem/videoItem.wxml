@@ -21,7 +21,10 @@
       <video id='video22' wx:if='{{videoSrc}}'  objectFit='cover' binderror="binderror" controls   poster='../../assets/img/swiper.jpg' src="{{videoSrc}}" ></video>
       </view>
     </view>
-
+    <!-- 脚部组件 -->
+    <view class='footer'> 
+        <footer></footer>
+    </view>
 </view>
 
 

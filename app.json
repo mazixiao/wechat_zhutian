@@ -2,6 +2,7 @@
   "pages":[
     "pages/components/index/index",
     "pages/components/header/header",
+    "pages/components/footer/footer",
     "pages/components/join/join",
     "pages/components/about/about",
     "pages/components/contact/contact",

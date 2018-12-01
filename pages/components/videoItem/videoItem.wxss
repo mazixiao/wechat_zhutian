@@ -2,8 +2,6 @@
 
 /*基础样式*/
 @import "../../assets/wxss/common";
-/*公共头部样式*/
-@import "../header/header";
 
 
 

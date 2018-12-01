@@ -20,6 +20,11 @@
 			</view>
 		</view>
 	</view>
+	<!-- 返回顶部 -->
+	<view class="backTop" bindtap="goTop" hidden='{{floorstatus}}'>
+		<text class="icon iconfont icon-iconfonticontrianglecopy"></text>
+	</view>
+
 </view>
 
 

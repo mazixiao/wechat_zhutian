@@ -1,0 +1,41 @@
+
+
+
+<!-- 公共页尾组件 -->
+<view class='footers'>
+	<view class="one clearfix">
+		<view class="left fl">
+			<view class="item weixin" hover-class="none" bindtap='controlWinxinShow'>
+				<text class="icon iconfont icon-weixin"></text>
+				<image hidden='{{weixinIsShow}}' class="small" src="../../assets/img/weixin.jpg" mode="widthFix" alt=""></image>
+			</view>
+			<view class="item weibo" hover-class="none">
+				<text class="icon iconfont icon-weibo"></text>
+			</view>
+			<view class="item tianmao" hover-class="none">
+				<text class="icon iconfont icon-tianmao"></text>
+			</view>
+		</view>
+		<view class="middle fr">
+			<navigator wx:for="{{navs}}" wx:key="item.url" hover-class="none" url="{{item.url}}">
+        {{item.text}}
+      </navigator>
+		</view>
+	</view>
+    <view class="two">
+        <view class="join1">
+            <text class="icon iconfont icon-dianhua1"></text>
+        </view>
+        <view class="join2">全国加盟热线</view>
+        <view class="join3">400-820-1717</view>
+    </view>
+    <view class="copyright">
+        <view>
+            Copyright ©2018   上海美哚餐饮有限公司 版权所有
+            <navigator url='http://www.miibeian.gov.cn' hover-class="none" class="wailian">沪ICP备xxxxxxxx号</navigator>
+        </view>
+    </view>
+</view>
+
+
+

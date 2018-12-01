@@ -2,8 +2,7 @@
 
 /*基础样式*/
 @import "../../assets/wxss/common";
-/*公共头部样式*/
-@import "../header/header";
+
 
 
 .index .header {
@@ -152,7 +151,6 @@
   margin-top: 10px;  
   margin-bottom: 5px;
   font-weight: bold;
-  /* display: inline-block; */
 }
 .about .about_con .item .text .two {
   font-size: 12px;
@@ -217,7 +215,6 @@
   margin-top: 15px;  
   margin-bottom: 5px;
   font-weight: bold;
-  /* display: inline-block; */
 }
 .join .join_con .item .text .two {
   font-size: 12px;
@@ -245,7 +242,6 @@
   line-height: 22px;
 }
 .tab {
-  /* font-size: 0; */
   width: 100%;
   box-sizing: border-box;
 }
@@ -374,3 +370,5 @@
 	padding: 10px 40px;
   color: #fff;
 }
+
+

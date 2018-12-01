@@ -5,7 +5,6 @@
 
 .headers {
   background-color: #fff;
-  /* background-color: red; */
   height: 45px;
   position: fixed;
   width: 100%;
@@ -38,7 +37,6 @@
 	right: 10px;
 	top: 0;
 	z-index: 2;
-	/* background-color: yellow; */
 }
 
 .phone_nav_switch .iconfont {
@@ -99,4 +97,24 @@
 	font-size: 14px;
 }
 
-	
+/* 返回顶部 */
+.backTop {
+  width: 45px;
+  height: 45px;
+  line-height: 60px;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+  display: inline-block;
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  border-radius: 2px;
+}
+.backTop .iconfont {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  font-size: 22px;
+  margin-top: -7px;
+  display: block;
+}

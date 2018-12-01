@@ -132,7 +132,7 @@ Page({
     email: '',
     //意向区域
     want: '',
-    
+
   },
 
   //tab切换
@@ -174,28 +174,28 @@ bindconfirm: function() {
 	});
 },
 
-// 获取input框姓名的值
+// 获取input框姓名的值(去空格)
 names: function(e){
 	this.setData({
 		names: e.detail.value.replace(/\s+/g, ''),
 	});
 },
 
-// 获取input框手机号
+// 获取input框手机号(去空格)
 phone: function(e){
 	this.setData({
 		phone: e.detail.value.replace(/\s+/g, ''),
 	});
 },
 
-// 获取input框邮箱
+// 获取input框邮箱(去空格)
 email: function(e){
 	this.setData({
 		email: e.detail.value.replace(/\s+/g, ''),
 	});
 },
 
-// 获取input框意向区域
+// 获取input框意向区域(去空格)
 want: function(e){
 	this.setData({
 		want: e.detail.value.replace(/\s+/g, ''),
@@ -270,10 +270,6 @@ commit:function() {
   },
   onUnload:function(){
     // 页面关闭
-  }
-
-
-
-
-
+  },
+  
 })

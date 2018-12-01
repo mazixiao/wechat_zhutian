@@ -12,13 +12,13 @@
 		autoplay="{{swiperAutoplay}}" interval="{{interval}}" duration="{{duration}}"  circular='{{loop}}'>
 			<block wx:for="{{imgUrls}}" wx:key='item'>
 				<swiper-item>
-					<image src="{{item}}" mode="widthFix" class="slide-image"/>
+					<image src="{{item}}" mode="widthFix" class="slide-image"></image>
 				</swiper-item>
 			</block>
 		</swiper>
 		<view class="small_video" bindtap='playVideo'>
-			<image class='big' src="../../assets/img/small_video.jpg" alt=""/>
-			<image class="small" src="../../assets/img/small_zanting.png" alt=""/>
+			<image class='big' mode="widthFix" src="../../assets/img/small_video.jpg" alt=""></image>
+			<image class="small" mode="widthFix" src="../../assets/img/small_zanting.png" alt=""></image>
 		</view>
 	</view>
 
@@ -36,7 +36,7 @@
 		</view>
 		<view class="about_con">
 			<view class="item" wx:for='{{about}}' wx:key='item'>
-				<image class="img" src="{{item.img}}" mode="widthFix" alt=""/>
+				<image class="img" src="{{item.img}}" mode="widthFix" alt=""></image>
 				<view class="text">
 					<view class="one">{{item.one}}</view>
 					<text class="two">{{item.two}}</text>
@@ -52,7 +52,7 @@
 		<view class="join_con">
 			<view class="item" wx:for='{{join}}' wx:key='item'>
 				<view class="img">
-					<image src="{{item.img}}" mode="widthFix" alt=""/>
+					<image src="{{item.img}}" mode="widthFix" alt=""></image>
 				</view>
 				<view class="text">
 					<view class="one">{{item.one}}</view>
@@ -62,7 +62,7 @@
 		</view>
 	</view>
 
-<view class="food">
+	<view class="food">
 		<view class="common_tit">
 			<view class="common_tit_con">煮田美食</view>
 		</view>
@@ -76,15 +76,15 @@
       </view> 
       <view class="tab_con"> 
         <view wx:for='{{tab.con}}' wx:key='item' class="con_item {{tabArr.curBdIndex==index? 'active' : ''}}">
-          <image wx:for='{{item}}' wx:key='list' wx:for-item="list" src="{{list}}" mode="widthFix" alt=""/>
+          <image wx:for='{{item}}' wx:key='list' wx:for-item="list" src="{{list}}" mode="widthFix" alt=""></image>
         </view> 
       </view>
 		</view>
     </view>
 
 
-<!-- 农场形象 -->
-<view class="farm">
+	<!-- 农场形象 -->
+	<view class="farm">
 		<view class="common_tit">
 			<view class="common_tit_con">农场形象</view>
 		</view>
@@ -93,60 +93,45 @@
 				{{farm.text}} 
 			</view>
 			<view class="more">
-				<navigator url='../about/about'>
+				<navigator url='../about/about' hover-class="none">
 					<text>了解更多</text> >
 				</navigator>
 			</view>
 		</view>
 		<view class="swiper2">
-      <swiper class='swiper' indicator-dots="{{indicatorDots}}" indicator-color="{{swiperOther}}" indicator-active-color="{{swiperActive}}"
-      autoplay="{{swiperAutoplay}}" interval="{{interval}}" duration="{{duration}}"  circular='{{loop}}'>
-        <block wx:for="{{farm.swiper}}" wx:key='item'>
-          <swiper-item>
-            <image src="{{item}}" mode="widthFix" class="slide-image"/>
-          </swiper-item>
-        </block>
-      </swiper>
+	  <swiper class='swiper' indicator-dots="{{indicatorDots}}" indicator-color="{{swiperOther}}" indicator-active-color="{{swiperActive}}"
+	  autoplay="{{swiperAutoplay}}" interval="{{interval}}" duration="{{duration}}"  circular='{{loop}}'>
+	    <block wx:for="{{farm.swiper}}" wx:key='item'>
+	      <swiper-item>
+	        <image src="{{item}}" mode="widthFix" class="slide-image"></image>
+	      </swiper-item>
+	    </block>
+	  </swiper>
 		</view>
-</view>
-
-
-<!-- 联系我们 -->
-<view class="contact">
-	<view class="common_tit">
-		<view class="common_tit_con">联系我们</view>
 	</view>
-    <view class="info">
-        <input bindinput="names" id="names" type="text" placeholder="姓名" />
-        <input bindinput="phone" id="phone" type="text" placeholder="手机" />
-        <input bindinput="email" id="email" type="text" placeholder="邮箱" />
-        <input bindinput="want" id="want" type="text" placeholder="意向区域" />
+
+	<!-- 联系我们 -->
+	<view class="contact">
+		<view class="common_tit">
+			<view class="common_tit_con">联系我们</view>
+		</view>
+	    <view class="info">
+	        <input bindinput="names" id="names" type="text" placeholder="姓名" />
+	        <input bindinput="phone" id="phone" type="text" placeholder="手机" />
+	        <input bindinput="email" id="email" type="text" placeholder="邮箱" />
+	        <input bindinput="want" id="want" type="text" placeholder="意向区域" />
+	    </view>
+	    <view class="commit">
+	        <view bindtap='commit'>提交</view>
+	    </view>
+	    <!-- alert框 -->
+		<modal hidden="{{alertShadow}}" confirm-text="确定" cancel-text="返回" bindconfirm="bindconfirm" bindcancel="bindconfirm">{{alertCon}}</modal>
+	</view>
+	
+	<!-- 脚部组件 -->
+    <view class='footer'> 
+        <footer></footer>
     </view>
-    <view class="commit">
-        <view bindtap='commit'>提交</view>
-    </view>
-    <!-- alert框 -->
-	<modal hidden="{{alertShadow}}" confirm-text="确定" cancel-text="返回" bindconfirm="bindconfirm" bindcancel="bindconfirm">{{alertCon}}</modal>
-
-</view>
-
-
-
-
-
-  <view>占位</view>
-  <view>占位</view>
-  <view>占位</view>
-  <view>占位</view>
-  <view>占位</view>
-  <view>占位</view>
-  <view>占位</view>
-  <view>占位</view>
-  <view>占位</view>
-  <view>占位</view>
-  <view>占位</view>
-  <view>占位</view>
-
 </view>
 
 
