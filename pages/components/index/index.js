@@ -5,8 +5,9 @@
 const app = getApp()
 
 Page({
+
   data: {
-    navIsShow: false,
+    // 首页轮播图
     imgUrls: [
       '../../assets/img/swiper.jpg',
       '../../assets/img/swiper.jpg',
@@ -24,19 +25,11 @@ Page({
     duration: 1000,
     // 循环轮播
     loop: true,
+    // 首页视频链接
     videoSrc: 'http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400',
     //视频默认隐藏
     videoHide: true,
-    video_test: [
-      {
-        img: '../../assets/img/small_video.jpg',
-        url: 'http://img.manro.com.cn/jb-play.mp4'
-      },
-      {
-        img: '../../assets/img/small_video.jpg',
-        url: 'http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400'
-      },
-    ],
+    // 关于我们
     about: [
       {
         img: '../../assets/img/about1.jpg',
@@ -139,7 +132,7 @@ Page({
     email: '',
     //意向区域
     want: '',
-
+    
   },
 
   //tab切换
@@ -174,48 +167,53 @@ pauseViode: function() {
 },
 
 
-
 // 点击alert框中的确定
 bindconfirm: function() {
 	this.setData({
 		alertShadow: true,
 	});
 },
+
 // 获取input框姓名的值
 names: function(e){
 	this.setData({
-		names: e.detail.value.replace(/\s+/g, '')
+		names: e.detail.value.replace(/\s+/g, ''),
 	});
 },
+
 // 获取input框手机号
 phone: function(e){
 	this.setData({
-		phone: e.detail.value.replace(/\s+/g, '')
+		phone: e.detail.value.replace(/\s+/g, ''),
 	});
 },
+
 // 获取input框邮箱
 email: function(e){
 	this.setData({
-		email: e.detail.value.replace(/\s+/g, '')
+		email: e.detail.value.replace(/\s+/g, ''),
 	});
 },
+
 // 获取input框意向区域
 want: function(e){
 	this.setData({
-		want: e.detail.value.replace(/\s+/g, '')
+		want: e.detail.value.replace(/\s+/g, ''),
 	});
 },
-
-
+// 点击提交按钮获取信息
 commit:function() {
-	// 手机号码验证
-    var phoneInput = /^[1][3,4,5,7,8][0-9]{9}$/;
-    // 邮箱验证
-    var emailInput = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
-
+  // 手机号码验证
+  var phoneInput = /^[1][3,4,5,7,8][0-9]{9}$/;
+  // 邮箱验证
+  var emailInput = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
+  // 获取姓名
 	var names = this.data.names;
+  // 获取手机号
 	var phone = this.data.phone;
+  // 获取邮箱
 	var email = this.data.email;
+  // 获取意向区域
 	var want = this.data.want;
 	if(!names) {
 		this.setData({
@@ -241,7 +239,7 @@ commit:function() {
 	if(!want) {
 		this.setData({
 			alertShadow: false,
-			alertCon: '请意向区域!',
+			alertCon: '请填写意向区域!',
 		});
 		return;
 	};
@@ -253,36 +251,26 @@ commit:function() {
 },
 
 
-// function checkEmail(email){
-//     var re = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
-//     if (!re.test(email)) {
-//         alert("邮箱有误，请重填");
-//         return false;
-//     }
-//     return email;
-// }
-
-
- //当页面改变是会触发
- bindchangeTag:function(e){
-  // console.log("bindchangeTag...")
- }, 
- onLoad:function(options){
- 	// console.log(options, '111');
-  // 页面初始化 options为页面跳转所带来的参数
- },
- onReady:function(){
-  // 页面渲染完成
- },
- onShow:function(){
-  // 页面显示
- },
- onHide:function(){
-  // 页面隐藏
- },
- onUnload:function(){
-  // 页面关闭
- }
+  //当页面改变是会触发
+  bindchangeTag:function(e){
+    // console.log("bindchangeTag...")
+  }, 
+  onLoad:function(options){
+    // console.log(options, '111');
+    // 页面初始化 options为页面跳转所带来的参数
+  },
+  onReady:function(){
+    // 页面渲染完成
+  },
+  onShow:function(){
+    // 页面显示
+  },
+  onHide:function(){
+    // 页面隐藏
+  },
+  onUnload:function(){
+    // 页面关闭
+  }
 
 
 

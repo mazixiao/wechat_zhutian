@@ -7,10 +7,7 @@ Component({
 
   properties: {
 
-
-
   }, 
-
 
   data: { 
     // 导航开关 
@@ -47,8 +44,7 @@ Component({
       {
         text: '视频列表',
         url: '../videoItem/videoItem'
-      },
-
+      }
 
     ]
   }, 
@@ -61,18 +57,5 @@ Component({
         navIsShow: !this.data.navIsShow
       });
     },
-
-  },
- // onLoad:function(options){
- //  console.log(options, '111');
- //  // 页面初始化 options为页面跳转所带来的参数
- // },
-  
-// onLoad:function(){
-// console.log(1);
-
-// },
-
-
-
+  }
 })
