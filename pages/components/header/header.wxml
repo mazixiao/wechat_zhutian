@@ -4,7 +4,7 @@
 <!-- 公共头部组件 -->
 <view class='headers'>
 	 <navigator class='logo' url="../index/index" hover-class="none">
-		<image src="../../assets/img/logo2.png"></image>
+		<image src="../../assets/img/logo2.png" mode="widthFix"></image>
 	 </navigator>
 	<view class="phone_nav_switch" bindtap="controlNav">
 	    <view class="iconfont icon-daohang" hidden="{{navIsShow}}"></view>

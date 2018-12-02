@@ -2,17 +2,216 @@
 
 /*基础样式*/
 @import "../../assets/wxss/common";
-/*公共头部样式*/
-@import "../header/header";
+
 
 
 .index .header {
 	width: 100%;
 }
 
+.banner {
+  margin-top: 45px;
+  width: 100%;
+  font-size: 0;
+}
+.banner image {
+  width: 100%;
+}
 
+.four_introduct {
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+.four_introduct .item {
+  width: 49%;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  height: 173px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  background-color: #c1e0c4;
+}
 
+.four_introduct .item:nth-child(2n) {
+  margin-right: 0;
+}
+.four_introduct .item:nth-child(2) {
+  background-color: #ffdd52;
+}
+.four_introduct .item:nth-child(3) {
+  background-color:#edbacb;
+}
+.four_introduct .item:nth-child(4) {
+  background-color: #daecef;
+}
+.four_introduct .item .img {
+  border-radius: 50%;
+  position: relative;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 90px;
+  height: 90px;
+}
+.four_introduct .item .img:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    border: 1px dashed #fff;
+}
+.four_introduct .item .img image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+}
 
+.four_introduct .item .text {
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.con_tit {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+.hot_sell {
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.hot_sell .hot_sell_con {
+    margin-top: 20px;
+}
+.hot_sell .hot_sell_con .item {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.hot_sell .hot_sell_con .item image {
+  width: 100%;
+}
+
+.hot_sell .hot_sell_con .item .border {
+    background: rgba(255,255,255,0.91);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 125px;
+    height: 125px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.hot_sell .hot_sell_con .item .border:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    border: 1px dashed #fff;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-left: -70px;
+    margin-top: -70px;
+    animation: zhuan 10s linear infinite;
+    box-sizing: border-box;
+}
+.hot_sell .hot_sell_con .item .border .text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hot_sell .hot_sell_con .item .border .text .one {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.hot_sell .hot_sell_con .item .border .text .two {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.cost1 .cost1_con {
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.cost1 .cost1_con .item {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.cost1 .cost1_con .item image {
+  width: 100%;
+}
+.cost1 .cost1_con .item .text {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 1px dashed #f0d9bb;
+    line-height: 24px;
+    font-size: 12px;
+    padding: 8px 5px 8px 8px;
+}
+.cost2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  background-color: #c1e0c4;
+}
+.cost2 .cost2_con {
+    margin-top: 20px;
+}  
+
+.brand {
+  background-color: rgb(237, 213, 185);
+  padding: 20px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.brand .brand_con {
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.brand .brand_con .item {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 22px;
+  width: 100%;
+  color: #333;
+}
 
 
 

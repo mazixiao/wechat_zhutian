@@ -5,19 +5,56 @@
     <view class='header'> 
         <header></header>
     </view>
+    <view class='banner'>
+      <image src="../../assets/img/banner.jpg" mode="widthFix"></image>
+    </view> 
 
+    <view class="four_introduct">
+        <view class="item" wx:for='{{fourIntroduct}}' wx:key='{{item}}'>
+          <view class="img">
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+          <view class="text">{{item.text}}</view>
+        </view>
+    </view>
 
-<view>招商加盟</view>
-<view>招商加盟</view>
-<view>招商加盟</view>
-<view>招商加盟</view>
-<view>招商加盟</view>
-<view>招商加盟</view>
-<view>招商加盟</view>
+    <view class="hot_sell">
+      <view class="con_tit">{{hot_sell.tit}}</view>
+      <view class="hot_sell_con">
+        <view class="item" wx:for='{{hot_sell.con}}' wx:key='{{item}}'>
+          <image src="{{item.img}}" mode="widthFix"></image>
+          <view class="border">
+            <view class="text">
+              <view class="one">{{item.one}}</view>
+              <view class="two">{{item.two}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
 
+    <view class="cost1">
+      <view class="con_tit">{{cost1.tit}}</view>
+      <view class="cost1_con">
+        <view class="item" wx:for='{{cost1.con}}' wx:key='{{item}}'>
+          <image src="{{item.img}}" mode="widthFix"></image>
+        <view class="text">{{item.one}}</view>
+        </view>
+      </view>
+    </view>
 
+    <view class="brand">
+      <view class="con_tit">{{brand.tit}}</view>
+    <view class="brand_con">
+      <text class="item" wx:for='{{brand.con}}' wx:key='{{item}}'>{{item.text}}</text>
+    </view>
+    </view>
 
-
+	 <!-- 脚部组件 -->
+    <view class='footer'> 
+        <footer></footer>
+    </view>
+    
 </view>
 
 
