@@ -2,17 +2,231 @@
 
 /*基础样式*/
 @import "../../assets/wxss/common";
-/*公共头部样式*/
-@import "../header/header";
 
 
-.index .header {
-	width: 100%;
+
+
+
+.banner {
+  margin-top: 45px;
+  width: 100%;
+  font-size: 0;
+}
+.banner image {
+  width: 100%;
+}
+
+.anchor {
+  border-top: 1px solid #f0d9bb;
+  border-bottom: 1px solid #f0d9bb;
+  text-align: center;
+  width: 97%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.anchor .item {
+  display: inline-block;
+  margin-right: 11px;
+  color: #292929;
+  background: #f0d9bb;
+  margin-bottom: -1px;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px 0;
+  width: 120px;
+}
+.anchor .item:last-child {
+  margin-right: 0;
+}
+.anchor .item.active {
+  background: #c1e0c4;
+  /* background:red; */
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+.zhutian_introduct {
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.con_tit {
+    text-align: center;
+}
+.con_tit .con_tit_con {
+  display: inline-block;
+  color: #333;
+  position: relative;
+  font-size: 22px;
+  line-height: 22px;
+  padding-bottom: 8px;
+}
+
+.con_tit .con_tit_con:before {
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  content: '';
+  height: 2px;
+  background: #292929;
+  width: 40px;
+  margin-left: -20px;
+}
+.zhutian_introduct .text {
+  color: #595959;
+  font-size: 12px;
+  line-height: 22px;
+  margin: 20px 0;
+}
+.zhutian_introduct .introduct_con {
+    background: #f8f8f8;
+    font-size: 0;
+}
+.zhutian_introduct .introduct_con .left {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+}
+.zhutian_introduct .introduct_con .left .video_img {
+    width: 100%;
+}
+.zhutian_introduct .introduct_con .left .zanting_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45px;
+}
+.zhutian_introduct .introduct_con .left .shadows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.17);
+}
+.zhutian_introduct .introduct_con .right {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.zhutian_introduct .introduct_con .right .right_con {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.zhutian_introduct .introduct_con .right .right_con .item {
+    width: 100px;
+    float: left;
+}
+.zhutian_introduct .introduct_con .right .right_con .item:nth-child(2) {
+    float: right;
+}
+
+.zhutian_introduct .introduct_con .right .right_con .item .round {
+    width: 100%;
+    position: relative;
+} 
+
+.zhutian_introduct .introduct_con .right .right_con .item .round image {
+    width: 100%;
+    animation: zhuan 5s linear infinite;
+}
+
+.zhutian_introduct .introduct_con .right .right_con .item .round .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:30px;
+    font-weight: bold;
+    color: #292929;
+}
+.zhutian_introduct .introduct_con .right .right_con .item .texts {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 10px;
 }
 
 
 
+.video_con {
+	position: relative;
+	z-index: 201;
+}
 
+.video_con .shadow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0 ,0.5);
+}
 
+.videoss {
+	width: 95%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 230px;	
+	overflow: hidden;
+}
+.video_con video {
+	width: 100%;
+	height: 100%;
+}
 
+.video_con .small {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 13px;
+	height: 19px;
+}
 
+.shop_show {
+  background-color: #f0d9bb;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.shop_show .shop_show_con {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.shop_show .shop_show_con .text {
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #595959;
+}
+.shop_show .shop_show_con .swiper {
+  width: 100%;
+  height: 250px;
+}
+.shop_show .shop_show_con .swiper image {
+  width: 100%;
+}
+.shop_show .shop_show_con .swiper view {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}

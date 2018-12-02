@@ -5,10 +5,6 @@
 
 
 
-.index .header {
-	width: 100%;
-}
-
 .banner {
   margin-top: 45px;
   width: 100%;

@@ -4,12 +4,6 @@
 @import "../../assets/wxss/common";
 
 
-
-.index .header {
-	width: 100%;
-}
-
-
 .swiper_con {
 	position: relative;
 }

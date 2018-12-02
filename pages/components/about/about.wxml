@@ -5,19 +5,73 @@
     <view class='header'> 
         <header></header>
     </view>
+    <view class='banner'>
+      <image src="../../assets/img/banner.jpg" mode="widthFix"></image>
+    </view> 
+
+    <view class="anchor" >
+      <view bindtap="anchorControl" data-id='{{index}}' class="item {{anchorActive==index? 'active' : ''}}" wx:for='{{anchor}}' wx:key='{{item}}'>{{item}}</view>
+    </view>
 
 
-<view>关于煮田</view>
-<view>关于煮田</view>
-<view>关于煮田</view>
-<view>关于煮田</view>
-<view>关于煮田</view>
-<view>关于煮田</view>
-<view>关于煮田</view>
+	<view class="zhutian_introduct">
+        <view class="con_tit">
+          <view class='con_tit_con'>{{zhutianIntroduct.tit}}</view>
+        </view> 
+        <view class="text">{{zhutianIntroduct.text}}</view>
+        <view class="introduct_con">
+            <view class="left" bindtap='playVideo'>
+                <image class="video_img" src="{{zhutianIntroduct.videoImg}}" mode="widthFix" alt=""></image>
+                <image class="zanting_img" src="{{zhutianIntroduct.zantingImg}}" mode="widthFix" alt=""></image>
+                <view class="shadows"></view>
+            </view>  
+            <view class="right">  
+                <view class="right_con">
+                    <view class="item" wx:for='{{zhutianIntroduct.rightCon}}' wx:key='{{item}}'>
+                        <view class="round">
+                            <image src="{{item.img}}" mode="widthFix" alt=""></image>
+                            <view class="number">{{item.number}}</view>
+                        </view>
+                        <view class="texts">{{item.text}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+	<!-- 视频 -->
+	<view class="video_con" hidden='{{videoHide}}'>
+		<view class="shadow" bindtap='pauseViode'></view>
+		<view class="videoss">
+			<video wx:if='{{videoSrc}}' id='video' objectFit='cover' controls   poster='../../assets/img/swiper.jpg' src="{{videoSrc}}" ></video>
+		</view>
+	</view>
 
 
+	<view class="shop_show">
+        <view class="shop_show_con">
+            <view class="con_tit">
+                <view class="con_tit_con">{{shopShow.tit}}</view>
+            </view>
+            <view class="text">{{shopShow.text}}</view>
+			<swiper class='swiper' indicator-dots="{{indicatorDots}}" indicator-color="{{swiperOther}}" indicator-active-color="{{swiperActive}}"
+			autoplay="{{swiperAutoplay}}" interval="{{interval}}" duration="{{duration}}"  circular='{{loop}}'>
+				<block wx:for="{{shopShow.swiper}}" wx:key='item'>
+					<swiper-item>
+						<image src="{{item.img}}" mode="widthFix" class="slide-image"></image>
+            <view>{{item.text}}</view>
+					</swiper-item>
+				</block>
+			</swiper>
+        </view>
+    </view>
 
 
+	 <!-- 脚部组件 -->
+    <view class='footer'> 
+        <footer></footer>
+    </view>
+    
 </view>
 
 
