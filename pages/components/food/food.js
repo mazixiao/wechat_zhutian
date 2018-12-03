@@ -6,16 +6,20 @@ const app = getApp()
 
 Page({
   data: {
+  
 
   },
 
 
 
-changeName:function(e){
-
-},
-
-
+  //视频关闭
+  pauseViode: function () {
+    this.setData({
+      videoHide: true,
+    });
+    var videoContext = wx.createVideoContext('video');
+    videoContext.pause();
+  },
 
 
 

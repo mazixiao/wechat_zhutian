@@ -1,12 +1,12 @@
 {
   "pages":[
+    "pages/components/food/food",
     "pages/components/about/about",
     "pages/components/join/join",
     "pages/components/index/index",
     "pages/components/header/header",
     "pages/components/footer/footer",
     "pages/components/contact/contact",
-    "pages/components/food/food",
     "pages/components/news/news",
     "pages/components/search/search",
     "pages/components/videoItem/videoItem"

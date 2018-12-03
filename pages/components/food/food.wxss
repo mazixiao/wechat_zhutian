@@ -2,17 +2,17 @@
 
 /*基础样式*/
 @import "../../assets/wxss/common";
-/*公共头部样式*/
-@import "../header/header";
 
 
-.index .header {
-	width: 100%;
+
+
+
+.banner {
+  margin-top: 45px;
+  width: 100%;
+  font-size: 0;
 }
-
-
-
-
-
-
+.banner image {
+  width: 100%;
+}
 

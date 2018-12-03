@@ -1,23 +1,27 @@
 
 
 
-<view class="join">
+<view class="food">
     <view class='header'> 
         <header></header>
     </view>
-
-
-<view>煮田美食</view>
-<view>煮田美食</view>
-<view>煮田美食</view>
-<view>煮田美食</view>
-<view>煮田美食</view>
-<view>煮田美食</view>
-<view>煮田美食</view>
+    <view class='banner'>
+      <image src="../../assets/img/banner.jpg" mode="widthFix"></image>
+    </view> 
 
 
 
+	food
 
+
+
+
+
+	 <!-- 脚部组件 -->
+    <view class='footer'> 
+        <footer></footer>
+    </view>
+    
 </view>
 
 
