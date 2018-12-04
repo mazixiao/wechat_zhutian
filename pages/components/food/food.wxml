@@ -10,8 +10,55 @@
     </view> 
 
 
+		<view class="tab">
+      <view class="tab_tit" > 
+        <view wx:for='{{tab.tit}}' wx:key='item' class="tit_item {{tabArr.curHdIndex==index? 'active' : ''}}" id="{{index}}"  data-id="{{index}}" bindtap="tab">{{item}}</view> 
+      </view> 
+      <view class="tab_con"> 
+        <view wx:for='{{tab.con}}' wx:key='item' class="con_item {{tabArr.curBdIndex==index? 'active' : ''}}">
+          <!-- <image wx:for='{{item}}' wx:key='list' wx:for-item="list" src="{{list}}" mode="widthFix" alt=""></image> -->
+          <swiper class='swiper' indicator-dots="{{indicatorDots}}" indicator-color="{{swiperOther}}" indicator-active-color="{{swiperActive}}"
+          autoplay="{{swiperAutoplay}}" interval="{{interval}}" duration="{{duration}}"  circular='{{loop}}'>
+            <block wx:for='{{item}}' wx:key='list' wx:for-item="list">
+              <swiper-item>
+                <image src="{{list}}" mode="widthFix" class="slide-image"></image>
+              </swiper-item>
+            </block>
+          </swiper>
 
-	food
+        </view> 
+      </view>
+		</view>
+
+    <view class="fresh">
+      <view class="con_tit">
+        <view class="con_tit_con">新鲜材料</view>
+      </view> 
+      <view class="fresh_con">
+        <view class="text">{{fresh.text}}</view>
+        <view class="item_con">
+          <view class="item" wx:for='{{fresh.fresh_con}}' wx:key='item'>
+            <image src="{{item}}" mode="widthFix"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+
+    <view class="focus">
+      <view class="con_tit">
+        <view class="con_tit_con">集采集送</view>
+      </view>
+      <view class="focus_con">
+        <image src="../../assets/img/cost1.jpg" mode="widthFix"></image>
+        <view class="border">
+          <view class="text">自有生产物流配送中心 全国5大加工厂</view>
+        </view>
+      </view>
+    </view>
+
+
 
 
 
