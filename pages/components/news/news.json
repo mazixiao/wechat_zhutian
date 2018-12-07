@@ -1,8 +1,6 @@
-
-
-
 {
   "usingComponents": {
-    "header":"../header/header"
+    "header": "../header/header",
+    "footer": "../footer/footer"
   }
 }

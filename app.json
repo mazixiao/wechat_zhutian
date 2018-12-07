@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/components/news/news",
     "pages/components/food/food",
     "pages/components/about/about",
     "pages/components/join/join",
@@ -7,7 +8,6 @@
     "pages/components/header/header",
     "pages/components/footer/footer",
     "pages/components/contact/contact",
-    "pages/components/news/news",
     "pages/components/search/search",
     "pages/components/videoItem/videoItem"
   ],

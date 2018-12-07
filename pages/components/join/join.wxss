@@ -163,6 +163,7 @@
   vertical-align: top;
   width: 100%;
   margin-bottom: 10px;
+  font-size: 0;
 }
 .cost1 .cost1_con .item image {
   width: 100%;

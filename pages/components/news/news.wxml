@@ -1,23 +1,37 @@
 
 
 
-<view class="join">
+<view class="news">
     <view class='header'> 
         <header></header>
     </view>
+    <view class='banner'>
+      <image src="../../assets/img/banner.jpg" mode="widthFix"></image>
+    </view> 
+
+    <view class="anchor">
+      <view class="item">最新资讯</view>
+      <view class="item">加盟展资讯</view>
+    </view>
 
 
-<view>最新资讯</view>
-<view>最新资讯</view>
-<view>最新资讯</view>
-<view>最新资讯</view>
-<view>最新资讯</view>
-<view>最新资讯</view>
-<view>最新资讯</view>
 
 
 
 
+
+
+
+
+
+
+
+
+	 <!-- 脚部组件 -->
+    <view class='footer'> 
+        <footer></footer>
+    </view>
+    
 </view>
 
 
