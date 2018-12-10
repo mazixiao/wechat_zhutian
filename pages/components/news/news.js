@@ -6,60 +6,28 @@ const app = getApp()
 
 Page({
   data: {
-
-    // tab 切换
-    tabArr: {
-      curHdIndex: 0,
-      curBdIndex: 0
-    },
-    tab: {
-      tit: [
-        '多种汤底',
-        '特色食材',
-        '美味小食',
-        '清爽饮品',
-      ],
-      con: [
-        [
-          '../../assets/img/about1.jpg',
-          '../../assets/img/cost1.jpg',
-        ],
-        [
-          '../../assets/img/cost1.jpg',
-          '../../assets/img/about1.jpg',
-        ],
-        [
-          '../../assets/img/about1.jpg',
-          '../../assets/img/cost1.jpg',
-        ],
-        [
-          '../../assets/img/cost1.jpg',
-          '../../assets/img/about1.jpg',
-        ],
-      ]
-    },
-    //是否显示小圆点
-    indicatorDots: true,
-    //轮播图小圆点
-    swiperOther: '#fff',
-    //轮播图小圆点高亮
-    swiperActive: '#4d7435',
-    swiperAutoplay: true,
-    // 自动切换时间间隔
-    interval: 5000,
-    // 滑动动画时长
-    duration: 1000,
-    // 循环轮播
-    loop: true,
-
-    fresh: {
-      text: '从田野到餐桌，实现麻辣烫的“品质健康”新升级。每一种食材，都足够新鲜，每一种味道，都用心调制。搭配酥肉、糍粑等小吃及特制饮品及樱花冰粉，新鲜制作，打造轻食健康麻辣烫。',
-      fresh_con: [
-        '../../assets/img/food1.jpg',
-        '../../assets/img/food1.jpg',
-      ]
-    }
-
+    news: [
+      {
+        img: '../../assets/img/news1.jpg',
+        textOne: '如何吃出美食C位，麻辣烫pick指南了解一下？',
+        textTwo: '2018-11-02',
+      },
+      {
+        img: '../../assets/img/news2.jpg',
+        textOne: '你有你的诗和远方，我有我的干拌酱',
+        textTwo: '2018-09-14',
+      },
+      {
+        img: '../../assets/img/news1.jpg',
+        textOne: '煮田农场|pick你的国庆计划',
+        textTwo: '2018-09-30',
+      },
+      {
+        img: '../../assets/img/news2.jpg',
+        textOne: '煮田农场|小吃界的Free Style',
+        textTwo: '2018-09-21',
+      },
+    ]
 
   },
 

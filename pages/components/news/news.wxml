@@ -2,19 +2,27 @@
 
 
 <view class="news">
-    <view class='header'> 
-        <header></header>
-    </view>
-    <view class='banner'>
-      <image src="../../assets/img/banner.jpg" mode="widthFix"></image>
+  <view class='header'> 
+      <header></header>
+  </view>
+  <view class='banner'>
+    <image src="../../assets/img/banner.jpg" mode="widthFix"></image>
+  </view> 
+
+  <view class="new_shop">
+    <view class="con_tit">
+      <view class="con_tit_con">新鲜材料</view>
     </view> 
-
-    <view class="anchor">
-      <view class="item">最新资讯</view>
-      <view class="item">加盟展资讯</view>
+    <view class="shop_con">
+      <navigator class="item" wx:for="{{news}}" wx:key="{{item}}" url="../newsDetail/newsDetail?title={{item.textOne}}&date={{item.textTwo}}">
+        <image src="{{item.img}}" mode="widthFix" class="img"></image>
+        <view class="text">
+          <view class="one">{{item.textOne}}</view>
+          <view class="two">{{item.textTwo}}</view>
+        </view>
+      </navigator>
     </view>
-
-
+  </view>
 
 
 

@@ -1,0 +1,65 @@
+
+
+/*基础样式*/
+@import "../../assets/wxss/common";
+
+
+
+
+
+.banner {
+  margin-top: 45px;
+  width: 100%;
+  font-size: 0;
+}
+.banner image {
+  width: 100%;
+}
+
+
+.news_detail {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+.news_detail .texts {
+  text-align: center;
+}
+.news_detail .texts .one {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+.news_detail .texts .two {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+
+
+
+.more {
+  text-align: center;
+}
+.more navigator {
+  border: 1px solid #4d7435;
+  font-size: 12px;
+  padding: 3px 25px;
+  display: inline-block;
+  background: #4d7435;
+  border-radius: 20px;
+  color: #fff;
+}
+.more navigator text {
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+}
+

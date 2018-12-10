@@ -1,0 +1,40 @@
+
+
+
+<view class="news">
+  <view class='header'> 
+      <header></header>
+  </view>
+  <view class='banner'>
+    <image src="../../assets/img/banner.jpg" mode="widthFix"></image>
+  </view> 
+
+
+
+  <view class="news_detail">
+    <view class="texts">
+      <view class="one">{{href.title}}</view>
+      <view class="two">{{href.date}}</view>
+    </view>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+	 <!-- 脚部组件 -->
+    <view class='footer'> 
+        <footer></footer>
+    </view>
+    
+</view>
+
+
+

@@ -17,31 +17,95 @@
 }
 
 
-.anchor {
-    margin: 0 auto;
-    border-top: 1px solid #f0d9bb;
-    border-bottom: 1px solid #f0d9bb;
-    font-size: 0;
+.con_tit {
     text-align: center;
-    width: 97%;
-    box-sizing: border-box;
-    padding: 0 10px;
-    margin-top: 20px;
 }
-
-.anchor .item {
+.con_tit .con_tit_con {
   display: inline-block;
-  margin-right: 11px;
-  color: #292929;
-  background: #f0d9bb;
-  margin-bottom: -1px;
-  font-size: 14px;
-  line-height: 24px;
-  padding: 10px 0;
-  width: 120px;
+  color: #333;
+  position: relative;
+  font-size: 22px;
+  line-height: 22px;
+  padding-bottom: 8px;
 }
 
-.anchor .item:last-child {
-    margin-right: 0;
+.con_tit .con_tit_con:before {
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  content: '';
+  height: 2px;
+  background: #292929;
+  width: 40px;
+  margin-left: -20px;
+}
+
+.new_shop {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+.shop_con {
+  margin-top: 20px;
+}
+.shop_con .item {
+  background: #f1f1f1;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.shop_con .item image {
+  width: 100%;
+}
+.shop_con .item .text {
+  text-align: center;
+}
+.shop_con .item .text .one {
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.shop_con .item .text .two {
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+
+
+
+
+
+.more {
+  text-align: center;
+}
+.more navigator {
+  border: 1px solid #4d7435;
+  font-size: 12px;
+  padding: 3px 25px;
+  display: inline-block;
+  background: #4d7435;
+  border-radius: 20px;
+  color: #fff;
+}
+.more navigator text {
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
 }
 
