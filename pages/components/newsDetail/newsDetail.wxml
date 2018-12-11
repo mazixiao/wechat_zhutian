@@ -16,6 +16,24 @@
       <view class="one">{{href.title}}</view>
       <view class="two">{{href.date}}</view>
     </view>
+
+
+  <view>城市: {{ajaxData.data.result[0].citynow.city}}</view>
+   <view>空气质量指数: {{ajaxData.data.result[0].citynow.AQI}}</view>
+   <view>空气质量指数: {{ajaxData.data.result[0].citynow.quality}}</view>
+   <view>空气质量指数: {{ajaxData.data.result[0].citynow.date}}</view>
+
+  <view wx:for="{{ajaxData.result.lastMoniData}}" wx:key="{{item}}"> 
+  
+  <view class="item" url="{{item.city}}">
+{{item.url}}
+      </view>
+  
+
+   </view>
+
+
+ 
   </view>
 
 
