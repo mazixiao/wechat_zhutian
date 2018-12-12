@@ -10,6 +10,8 @@ Page({
     href: {},
     // ajax容器
     ajaxData: [],
+    // 页码
+    pageToken: 1,
 
   },
 
@@ -24,17 +26,25 @@ Page({
 
 
   ajaxSend: function (that) {
+
+    var pageToken = this.data.pageToken
+
+
+
+
+
     wx.request({
-      // url: 'http://web.juhe.cn:8080/environment/air/cityair?city=%E4%B8%8A%E6%B5%B7&key=cd1fbf79725d23665a04f33a548fad5b',
-      url: 'https://api01.idataapi.cn/news/qihoo?kw=%E7%99%BD&site=qq.com&pageToken=1&apikey=WyPef4FMI79FqgPyB6zbdhhDxNyLTnn2MX4d1cJUHRi3G0UpefWIfwb5fqfDBQfw',
+      url: 'https://api01.idataapi.cn/news/qihoo?kw=%E7%99%BD&site=qq.com&pageToken=' + pageToken + '&apikey=WyPef4FMI79FqgPyB6zbdhhDxNyLTnn2MX4d1cJUHRi3G0UpefWIfwb5fqfDBQfw',
       
       method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       success: function (res) {
         if (res.statusCode == 200) {
-          console.log(res)
+          // console.log(res)
           that.setData({
-            ajaxData: res
+            ajaxData: that.data.ajaxData.concat(res.data.data)
           })
+ 
+          console.log(that.data.ajaxData, '333')
         } else {
           console.log("index.js wx.request CheckCallUser statusCode" + res.statusCode);
         }
@@ -46,6 +56,14 @@ Page({
         // complete
       }
     })
+  },
+
+  aaa: function() {
+    this.setData({
+      pageToken: this.data.pageToken + 1
+    })
+    this.ajaxSend(this)
+    // console.log(this.data.pageToken)
   }
 
 
