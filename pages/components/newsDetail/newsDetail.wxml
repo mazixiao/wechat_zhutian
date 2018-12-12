@@ -16,38 +16,32 @@
       <view class="two">{{href.date}}</view>
     </view>
 
-
     <view class='newCon' wx:for="{{ajaxData}}" wx:key="{{item}}"> 
-      <block class="item" url="{{item.city}}">
-        {{index + 1}} -->{{item.content}}
-        <image src="{{item.imageUrls[0]}}" mode="widthFix"></image>
-      </block>
+      <view class="item" url="{{item.city}}">
+        <navigator class='title' url='{{item.url}}'>
+          <text>{{index + 1}}. {{item.title}}</text>
+        </navigator>
+        <text class='content'>{{item.content}}</text>
+        <view class='imgItem'>
+          <image wx:for="{{item.imageUrls}}" wx:key="{{list}}" wx:for-index="indexs" wx:for-item="list" src="{{list}}" mode="widthFix"></image>
+        </view>
+        <view class='right_con'>
+          <text class='time'>时间：{{item.publishDateStr}}</text>
+          <text class='anthor'>作者：{{item.posterScreenName}}</text>
+        </view>
+      </view>
     </view>
-
- 
   </view>
 
-
-
-			<view class="more">
-				<view class="moreCon" bindtap='aaa'>
-					<text>查看更多</text> >
-				</view>
-        页码---> {{pageToken}}
-			</view>
-
-
-
-
-
-
-
-
+  <view class="more">
+    <view class="moreCon" bindtap='againAjax'>
+      <text>查看更多</text> >
+    </view>
+  </view>
 	 <!-- 脚部组件 -->
     <view class='footer'> 
         <footer></footer>
     </view>
-    
 </view>
 
 

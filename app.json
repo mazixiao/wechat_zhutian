@@ -1,11 +1,11 @@
 {
   "pages":[
+        "pages/components/index/index",
     "pages/components/newsDetail/newsDetail",
     "pages/components/news/news",
     "pages/components/food/food",
     "pages/components/about/about",
     "pages/components/join/join",
-    "pages/components/index/index",
     "pages/components/header/header",
     "pages/components/footer/footer",
     "pages/components/contact/contact",

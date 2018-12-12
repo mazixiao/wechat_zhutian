@@ -17,34 +17,24 @@ Page({
 
 //接收href上的数据
   onLoad: function (options) {
+    var that = this;
     this.setData({
       href: options
-    })
-    var that = this
-    that.ajaxSend(that)
+    });
+    that.ajaxSend(that);
   }, 
-
-
+  // 发送请求封装
   ajaxSend: function (that) {
-
     var pageToken = this.data.pageToken
-
-
-
-
-
     wx.request({
       url: 'https://api01.idataapi.cn/news/qihoo?kw=%E7%99%BD&site=qq.com&pageToken=' + pageToken + '&apikey=WyPef4FMI79FqgPyB6zbdhhDxNyLTnn2MX4d1cJUHRi3G0UpefWIfwb5fqfDBQfw',
-      
       method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       success: function (res) {
         if (res.statusCode == 200) {
           // console.log(res)
           that.setData({
             ajaxData: that.data.ajaxData.concat(res.data.data)
-          })
- 
-          console.log(that.data.ajaxData, '333')
+          });
         } else {
           console.log("index.js wx.request CheckCallUser statusCode" + res.statusCode);
         }
@@ -58,12 +48,11 @@ Page({
     })
   },
 
-  aaa: function() {
+  againAjax: function() {
     this.setData({
-      pageToken: this.data.pageToken + 1
+      pageToken: this.data.pageToken + 1,
     })
     this.ajaxSend(this)
-    // console.log(this.data.pageToken)
   }
 
 
