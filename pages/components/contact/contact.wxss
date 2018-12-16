@@ -2,17 +2,72 @@
 
 /*基础样式*/
 @import "../../assets/wxss/common";
-/*公共头部样式*/
-@import "../header/header";
 
 
-.index .header {
-	width: 100%;
+
+
+
+.banner {
+  margin-top: 45px;
+  width: 100%;
+  font-size: 0;
+}
+
+.banner image {
+  width: 100%;
+}
+
+.tab-tit {
+  border-top: 1px solid #f0d9bb;
+  border-bottom: 1px solid #f0d9bb;
+  text-align: center;
+  width: 97%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.tab-tit .item {
+  display: inline-block;
+  margin-right: 11px;
+  color: #292929;
+  background: #f0d9bb;
+  margin-bottom: -1px;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px 0;
+  width: 120px;
+}
+.tab-tit .item:last-child {
+  margin-right: 0;
+}
+.tab-tit .item.active {
+  background: #c1e0c4;
+  /* background:red; */
+  font-weight: bold;
+  transition: all 0.4s;
 }
 
 
 
 
+.tab-con .tab-item {
+	display: none;
+}
 
+.tab-con .tab-item.active {
+	display: block;
+}
 
+.tab-con .tab-item.contact-con {
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 
+.tab-con .tab-item.contact-con image {
+	width: 100%;
+}

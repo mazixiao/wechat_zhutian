@@ -1,23 +1,39 @@
 
 
 
-<view class="join">
-    <view class='header'> 
-        <header></header>
+<view class="search">
+  <view class='header'> 
+      <header></header>
+  </view>
+  <view class='banner'>
+    <image src="../../assets/img/banner.jpg" mode="widthFix"></image>
+  </view> 
+
+
+
+    <view class="tab-tit">
+      <view bindtap="anchorControl" data-id='{{index}}' class="item {{anchorActive==index? 'active' : ''}}" wx:for='{{tabTit}}' wx:key='{{item}}'>{{item}}</view>
     </view>
-
-
-<view>联系我们</view>
-<view>联系我们</view>
-<view>联系我们</view>
-<view>联系我们</view>
-<view>联系我们</view>
-<view>联系我们</view>
-<view>联系我们</view>
-
+  
+	<view class="tab-con">
+		<view class="tab-item join-con {{anchorActive==0? 'active' : ''}}">11</view>
+		<view class="tab-item contact-con {{anchorActive==1? 'active' : ''}}">
+			<image src="../../assets/img/contact-con.jpg" mode="widthFix"></image>
+		</view>
+	</view>
 
 
 
+
+
+
+
+
+	 <!-- 脚部组件 -->
+    <view class='footer'> 
+        <footer></footer>
+    </view>
+    
 </view>
 
 

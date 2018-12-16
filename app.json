@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/components/contact/contact",
     "pages/components/search/search",    
     "pages/components/index/index",
     "pages/components/newsDetail/newsDetail",
@@ -9,8 +10,6 @@
     "pages/components/join/join",
     "pages/components/header/header",
     "pages/components/footer/footer",
-    "pages/components/contact/contact",
-
     "pages/components/videoItem/videoItem"
   ],
   "window":{
