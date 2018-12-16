@@ -7,6 +7,7 @@ const app = getApp()
 Page({
 
   data: {
+    aaa: 'pages/components/index/index',
     // 首页轮播图
     imgUrls: [
       '../../assets/img/swiper.jpg',
@@ -256,11 +257,15 @@ commit:function() {
     // console.log("bindchangeTag...")
   }, 
   onLoad:function(options){
-    // console.log(options, '111');
-    // 页面初始化 options为页面跳转所带来的参数
+    this.setData({
+      aaa: this.route,
+    });
+    // console.log(this.data.aaa);
+
   },
   onReady:function(){
     // 页面渲染完成
+    // console.log(this.data.aaa);
   },
   onShow:function(){
     // 页面显示

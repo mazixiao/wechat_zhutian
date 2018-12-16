@@ -1,5 +1,6 @@
 
 {
+  "component": true,
   "usingComponents": {
     "header":"../header/header",
     "footer":"../footer/footer"

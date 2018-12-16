@@ -1,6 +1,7 @@
 {
   "pages":[
-        "pages/components/index/index",
+    "pages/components/search/search",    
+    "pages/components/index/index",
     "pages/components/newsDetail/newsDetail",
     "pages/components/news/news",
     "pages/components/food/food",
@@ -9,7 +10,7 @@
     "pages/components/header/header",
     "pages/components/footer/footer",
     "pages/components/contact/contact",
-    "pages/components/search/search",
+
     "pages/components/videoItem/videoItem"
   ],
   "window":{

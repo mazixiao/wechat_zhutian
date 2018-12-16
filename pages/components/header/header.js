@@ -6,8 +6,35 @@ Component({
   }, 
 
   properties: {
-
+    aaa: String
   }, 
+
+  // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
+  attached: function () {
+   
+    var exp = this.data.aaa;
+    var index = 'pages/components/index/index';
+
+
+    switch (exp) {
+      case index:
+        //var ddd = document.getElementByClassName('active0');
+        var query = wx.createSelectorQuery()
+        query.select('active0')
+        //console.log(query.select('active0'), 'ddd');
+        //console.log(query, '444');
+        break;
+      default:
+        // console.log(exp, '999');
+        // console.log(index, '999');
+    }
+
+   },
+
+
+  moved: function () { },
+  detached: function () { },
+  
 
   data: { 
     // 导航开关 

@@ -27,7 +27,7 @@
             <text class="icon iconfont icon-dianhua1"></text>
         </view>
         <view class="join2">全国加盟热线</view>
-        <view class="join3">400-820-1717</view>
+        <view class="join3" bindtap='phonecallevent'>12345678910</view>
     </view>
     <view class="copyright">
         <view>

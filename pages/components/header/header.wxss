@@ -97,6 +97,10 @@
 	font-size: 14px;
 }
 
+.nav .bg .con navigator.active {
+  background-color: red;
+}
+
 /* 返回顶部 */
 .backTop {
   width: 45px;

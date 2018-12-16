@@ -14,7 +14,7 @@
 		<view class="shadow {{navIsShow ? 'active':''}}" bindtap="controlNav"></view>
 		<view class="bg {{navIsShow ? 'active':''}}">
 			<view class='con' wx:for="{{navs}}" wx:key="item.url">
-				 <navigator url="{{item.url}}" hover-class="none">
+				 <navigator class='active10 {{"active" + index}}' url="{{item.url}}" hover-class="none">
 					{{item.text}}
 				 </navigator>
 			</view>

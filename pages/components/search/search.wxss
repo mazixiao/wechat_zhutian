@@ -2,17 +2,104 @@
 
 /*基础样式*/
 @import "../../assets/wxss/common";
-/*公共头部样式*/
-@import "../header/header";
 
 
-.index .header {
-	width: 100%;
+
+
+
+.banner {
+  margin-top: 45px;
+  width: 100%;
+  font-size: 0;
+}
+.banner image {
+  width: 100%;
 }
 
+.search {
+	margin-top: 30px;
+}
 
+.search_item {
+	box-sizing: border-box;
+	/* font-size: 0; */
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+  text-align: center;
+  background: #fff1df;
+}
 
+.search_item.search_item0 {
+    background: #fff1df;
+    background: red;
+}
+.search_item.search_item1 {
+    background: #dfefe0;
+}
+.search_item.search_item2 {
+    background: #daecf0;
+}
+.search_item .item {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.search_item .item .img {
+    width: 100%;
+    overflow: hidden;
+}
 
+.search_item .item .texts {
+	position: relative;
+	background: #fff;
+	width: 100%;
+	box-sizing: border-box;
+	padding-top: 49px;
+	height: 125px;
+	margin-top: 0;
+}
 
+.search_item .item .texts .round {
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 93px;
+  height: 93px;
+  font-size: 12px;
+  line-height: 16px;
+  top: -46.5px;
+}
+.search_item .item .texts .round:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px dashed #fff;
+  width: 100px;
+  height: 100px;
+}
+.search_item .item .texts .round .round_con {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-
+.search_item .item .texts .small_introduct {
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 0 5px;
+}

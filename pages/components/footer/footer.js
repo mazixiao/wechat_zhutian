@@ -12,6 +12,8 @@ Component({
   data: { 
     // 微信图片默认看不见
     weixinIsShow: true,
+    // 电话号码
+    phonecall: '12345678910',    
     navs: [
       {
         text: '网站首页',
@@ -55,7 +57,14 @@ Component({
       this.setData({
         weixinIsShow: !this.data.weixinIsShow
       });
+    },
+    // 点击事件
+    phonecallevent: function (e) {
+      wx.makePhoneCall({
+        phoneNumber: this.data.phonecall
+      })
     }
+
 
   }
 })

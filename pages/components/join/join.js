@@ -6,6 +6,7 @@ const app = getApp()
 
 Page({
   data: {
+    aaa: 'pages/components/join/join',
 
   	fourIntroduct: [
   		{

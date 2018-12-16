@@ -1,23 +1,44 @@
 
 
 
-<view class="join">
-    <view class='header'> 
-        <header></header>
+<view class="search">
+  <view class='header'> 
+      <header></header>
+  </view>
+  <view class='banner'>
+    <image src="../../assets/img/banner.jpg" mode="widthFix"></image>
+  </view> 
+
+
+
+	<view class="search-con">
+		<view class="search_item {{Math.floor((index/2)%3) == 1?'search_item1': ''}}" wx:for='{{search}}' wx:key='item'>
+    {{Math.floor((index/2))}}
+			<view class="item">
+				<image class='img' src="{{item.img}}" mode="widthFix"></image>
+				<view class="texts">
+					<view class="round">
+						<text class="round_con">{{item.text1}}</text>
+					</view>
+					<text class="small_introduct">{{item.text2}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+  
+
+
+
+
+
+
+
+
+	 <!-- 脚部组件 -->
+    <view class='footer'> 
+        <footer></footer>
     </view>
-
-
-<view>门店查询</view>
-<view>门店查询</view>
-<view>门店查询</view>
-<view>门店查询</view>
-<view>门店查询</view>
-<view>门店查询</view>
-<view>门店查询</view>
-
-
-
-
+    
 </view>
 
 
