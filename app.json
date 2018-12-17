@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/components/index/index",
     "pages/components/contact/contact",
     "pages/components/search/search",    
-    "pages/components/index/index",
     "pages/components/newsDetail/newsDetail",
     "pages/components/news/news",
     "pages/components/food/food",
