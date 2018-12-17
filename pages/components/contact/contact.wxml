@@ -16,7 +16,45 @@
     </view>
   
 	<view class="tab-con">
-		<view class="tab-item join-con {{anchorActive==0? 'active' : ''}}">11</view>
+		<view class="tab-item join-con {{anchorActive==0? 'active' : ''}}">
+		    <view class="con_tit">
+		      <view class="con_tit_con">新鲜材料</view>
+		    </view> 	
+
+			<view class="item_con">
+				<view class="con_tit">
+					<view class="one">市场开发专员</view>
+					<view class="two">负责公司直营及加盟业务开发与执行工作</view>
+				</view>
+				<view class="list_con">
+					<view class="list">
+						<text class="texts">
+							1、负责所辖区域市场连锁门店开发拓展，开发新的加盟商；\n
+							2、负责新店铺与加盟店铺的初步市场调研、评估及开发；\n
+							3、熟悉商圈的分布和大型商场的招商流程；\n
+							4、了解店址及周边商户租金、营业额等相关信息；\n
+							5、参与店铺谈判和签约过程；\n
+							6、相关门店证照协助办理。    \n                            
+						</text>
+						<view class="round">
+							<view class="sicircle"></view>
+							<view class="text">岗位职责</view>
+						</view>
+					</view>
+					<view class="list">
+						<text class="texts">
+							1、30岁以上，大专以上学历（条件优异者可适当放宽），2年以上快消行业深度分销、渠道（经销商）管理经验；\n
+							2、外向、善谈、具备较强的影响力，良好的沟通能力与谈判能力；\n
+							3、能吃苦耐劳、责任心强，具备解决突发事件的能力。              
+						</text>
+						<view class="round">
+							<span class="sicircle"></span>
+							<view class="text">任职要求</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
 		<view class="tab-item contact-con {{anchorActive==1? 'active' : ''}}">
 			<image src="../../assets/img/contact-con.jpg" mode="widthFix"></image>
 		</view>

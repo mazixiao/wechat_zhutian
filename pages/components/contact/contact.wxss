@@ -59,6 +59,129 @@
 	display: block;
 }
 
+.con_tit {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.con_tit .con_tit_con {
+  display: inline-block;
+  color: #333;
+  position: relative;
+  font-size: 22px;
+  line-height: 22px;
+  padding-bottom: 8px;
+}
+
+.con_tit .con_tit_con:before {
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  content: '';
+  height: 2px;
+  background: #292929;
+  width: 40px;
+  margin-left: -20px;
+}
+
+.join-con .item_con {
+  background: #fff1df;
+  padding: 20px 10px 20px 10px;
+  margin-bottom: 20px;    
+}
+
+.join-con .item_con .con_tit {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.join-con .item_con .con_tit .one {
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.join-con .item_con .con_tit .two {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.join-con .item_con .list_con .list {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 20px;
+  min-height: 200px;
+  width: 100%;
+  margin-bottom: 75px;
+  padding: 70px 5px 10px 5px;
+}
+
+.join-con .item_con .list_con .list .texts {
+color: #666;
+font-size: 12px;
+line-height: 22px;
+}
+
+.join-con .item_con .list_con .list .round {
+  position: absolute;
+  top: -63px;
+  border-radius: 50%;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+  width: 100px;
+  height: 100px;
+}
+
+.join-con .item_con .list_con .list .round:before {
+  position: absolute;
+  content: '';
+  border: 1px dashed #f2dcbf;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 101px;
+  height: 101px;
+}
+
+.join-con .item_con .list_con .list .round .sicircle {
+    position: absolute;
+    border-radius: 0 0 100px 100px;
+    height: 50%;
+    width: 100%;
+    background: #fff1df;
+    bottom: 0;
+}
+
+.join-con .item_con .list_con .list .round .text {
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .tab-con .tab-item.contact-con {
 	text-align: center;
 	width: 100%;
