@@ -249,6 +249,8 @@ commit:function() {
 		alertCon: '提交成功!',
 	});
 
+
+
 },
 
 
@@ -260,8 +262,13 @@ commit:function() {
     this.setData({
       aaa: this.route,
     });
-    // console.log(this.data.aaa);
-
+    // loading加载
+    wx.showToast({
+      title: '加载中...',
+      mask: true,
+      icon: 'loading',
+      duration: 500
+    })
   },
   onReady:function(){
     // 页面渲染完成

@@ -3,7 +3,7 @@
 
 <!-- 公共头部组件 -->
 <view class='headers'>
-	 <navigator class='logo' url="../index/index" hover-class="none">
+	 <navigator open-type="redirect" class='logo' url="../index/index" hover-class="none">
 		<image src="../../assets/img/logo2.png" mode="widthFix"></image>
 	 </navigator>
 	<view class="phone_nav_switch" bindtap="controlNav">
@@ -14,7 +14,7 @@
 		<view class="shadow {{navIsShow ? 'active':''}}" bindtap="controlNav"></view>
 		<view class="bg {{navIsShow ? 'active':''}}">
 			<view class='con' wx:for="{{navs}}" wx:key="item.url">
-				 <navigator class='active10 {{"active" + index}}' url="{{item.url}}" hover-class="none">
+				 <navigator open-type="redirect" class='active10 {{"active" + index}}' url="{{item.url}}" hover-class="none">
 					{{item.text}}
 				 </navigator>
 			</view>

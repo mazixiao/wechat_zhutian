@@ -27,8 +27,7 @@ Component({
       default:
         // console.log(exp, '999');
         // console.log(index, '999');
-    }
-
+    };
    },
 
 

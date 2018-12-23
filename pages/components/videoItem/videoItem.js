@@ -56,7 +56,18 @@ Page({
     });
     var videoContext = wx.createVideoContext('video22');
     videoContext.pause();
-  }
+  },
+
+  onLoad: function (options) {
+    // loading加载
+    wx.showToast({
+      title: '加载中...',
+      mask: true,
+      icon: 'loading',
+      duration: 500
+    })
+  },
+
 
 
 })

@@ -22,6 +22,14 @@ Page({
       href: options
     });
     that.ajaxSend(that);
+    // loading加载
+    wx.showToast({
+      title: '加载中...',
+      mask: true,
+      icon: 'loading',
+      duration: 500
+    })
+
   }, 
   // 发送请求封装
   ajaxSend: function (that) {
@@ -41,6 +49,12 @@ Page({
       },
       fail: function () {
         console.log("index.js wx.request CheckCallUser fail");
+        wx.showToast({
+          title: '请检查网络',
+          mask: true,
+          image: '../../assets/img/fail.png',
+          duration: 2000
+        })          
       },
       complete: function () {
         // complete
@@ -52,15 +66,13 @@ Page({
     this.setData({
       pageToken: this.data.pageToken + 1,
     })
-    this.ajaxSend(this)
-  }
-
-
-
-
-
-
-
-
+    this.ajaxSend(this);
+    wx.showToast({
+      title: '获取数据...',
+      mask: true,
+      icon: 'loading',
+      duration: 500
+    })    
+  },
 
 })

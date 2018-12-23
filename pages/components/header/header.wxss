@@ -52,6 +52,11 @@
 	transform: translate(-50%, -50%);
 }
 
+.nav {
+  position: relative;
+  z-index: 5;
+}
+
 .nav .shadow {
 	position: fixed;
 	top: 45px;

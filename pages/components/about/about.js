@@ -113,9 +113,14 @@ Page({
   },
 
   onLoad: function (options) {
-    // console.log(getCurrentPages()[0].route, '111');
-    // // 页面初始化 options为页面跳转所带来的参数
+    // loading加载
+    wx.showToast({
+      title: '加载中...',
+      mask: true,
+      icon: 'loading'
+    })
   },
 
 
 })
+

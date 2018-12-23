@@ -16,7 +16,7 @@
       <view class='text'>{{item.text}}</view>
       </view>
 
-      <view class='container' hidden='{{isShowVideo}}'>
+      <view class='container' catchtouchmove="ture" hidden='{{isShowVideo}}'>
       <view class='shadow' bindtap='videoPause'></view>
       <video id='video22' wx:if='{{videoSrc}}'  objectFit='cover' binderror="binderror" controls   poster='../../assets/img/swiper.jpg' src="{{videoSrc}}" ></video>
       </view>

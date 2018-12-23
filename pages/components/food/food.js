@@ -76,6 +76,14 @@ Page({
   },
 
 
+  onLoad: function (options) {
+    // loading加载
+    wx.showToast({
+      title: '加载中...',
+      mask: true,
+      icon: 'loading'
+    })
+  },
 
 
 })
