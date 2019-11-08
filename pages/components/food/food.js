@@ -6,6 +6,12 @@ const app = getApp()
 
 Page({
   data: {
+    /**
+    * 用户点击右上角分享
+    */
+    onShareAppMessage: function () {
+
+    },
 
     // tab 切换
     tabArr: {

@@ -5,6 +5,13 @@
 const app = getApp()
 
 Page({
+  /**
+  * 用户点击右上角分享
+  */
+  onShareAppMessage: function () {
+
+  },
+
   data: {
     anchor: ['煮田简介', '门店形象'],
     // 锚点 默认第一个高亮

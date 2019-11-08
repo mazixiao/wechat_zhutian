@@ -5,6 +5,13 @@
 const app = getApp()
 
 Page({
+  /**
+  * 用户点击右上角分享
+  */
+  onShareAppMessage: function () {
+
+  },
+
   data: {
   	tabTit: ['人才招聘', '联系我们'],
     // 锚点 默认第一个高亮
