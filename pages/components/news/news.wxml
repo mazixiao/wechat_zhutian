@@ -14,7 +14,7 @@
       <view class="con_tit_con">新鲜材料</view>
     </view> 
     <view class="shop_con">
-      <navigator class="item" wx:for="{{news}}" wx:key="{{item}}" url="../newsDetail/newsDetail?title={{item.textOne}}&date={{item.textTwo}}">
+      <navigator class="item" wx:for="{{news}}" wx:key="{{item}}" url="../newsDetail/newsDetail?title={{item.textOne}}&date={{item.textTwo}}" open-type="navigate">
         <image src="{{item.img}}" mode="widthFix" class="img"></image>
         <view class="text">
           <view class="one">{{item.textOne}}</view>

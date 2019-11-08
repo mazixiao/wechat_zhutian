@@ -17,7 +17,7 @@
 			</view>
 		</view>
 		<view class="middle fr">
-			<navigator wx:for="{{navs}}" wx:key="item.url" hover-class="none" url="{{item.url}}">
+			<navigator wx:for="{{navs}}" wx:key="item.url" hover-class="none" url="{{item.url}}" open-type="redirect">
         {{item.text}}
       </navigator>
 		</view>
