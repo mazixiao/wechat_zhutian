@@ -1,8 +1,8 @@
 {
-  "pages":[
+  "pages": [
     "pages/components/index/index",
     "pages/components/contact/contact",
-    "pages/components/search/search",    
+    "pages/components/search/search",
     "pages/components/news/news",
     "pages/components/newsDetail/newsDetail",
     "pages/components/food/food",
@@ -12,10 +12,11 @@
     "pages/components/footer/footer",
     "pages/components/videoItem/videoItem"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
 }

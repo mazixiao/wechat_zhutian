@@ -120,6 +120,14 @@
 	        <input bindinput="phone" id="phone" type="text" placeholder="手机" />
 	        <input bindinput="email" id="email" type="text" placeholder="邮箱" />
 	        <input bindinput="want" id="want" type="text" placeholder="意向区域" />
+          <view class="section">
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+              <view class="picker">
+                选择城市：{{region[0]}}，{{region[1]}}，{{region[2]}}
+              </view>
+            </picker>
+          </view>
+
 	    </view>
 	    <view class="commit">
 	        <view bindtap='commit'>提交</view>

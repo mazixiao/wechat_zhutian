@@ -138,8 +138,12 @@ Page({
     email: '',
     //意向区域
     want: '',
+    // 选择城市
+    region: ['广东省', '广州市', '海珠区'],
+    customItem: '全部'
 
   },
+
 
   //tab切换
   tab: function (e) {
@@ -207,6 +211,14 @@ want: function(e){
 		want: e.detail.value.replace(/\s+/g, ''),
 	});
 },
+// 选择select框
+bindRegionChange: function (e) {
+  console.log('picker发送选择改变，携带值为', e.detail.value)
+  this.setData({
+    region: e.detail.value
+  })
+},
+
 // 点击提交按钮获取信息
 commit:function() {
   // 手机号码验证
