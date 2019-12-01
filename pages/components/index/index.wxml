@@ -1,6 +1,4 @@
 
-
-
 <view class="index">
 	<!-- 头部组件 -->
     <view class='header'> 
@@ -29,6 +27,28 @@
 			<video wx:if='{{videoSrc}}' id='video' objectFit='cover' controls   poster='../../assets/img/swiper.jpg' src="{{videoSrc}}" ></video>
 		</view>
 	</view>
+
+<button bindtap="uploader">点击上传</button>
+
+<view class="weui-uploader">
+	<view class="weui-uploader__hd">
+		<view class="weui-uploader__title">图片上传</view>
+	</view>
+	<view class="weui-uploader__bd">
+		<block wx:for="{{imagesList}}" wx:key="*this" >
+		<view class="weui-uploader__file">
+			<image class="weui-uploader__img" src="{{item}}"></image>
+		</view>
+		</block>
+		<view class="weui-uploader__input-box">
+			<input class="weui-uploader__input js_file" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple="" bindtap='uploader' name="images"></input>
+		</view>
+	</view>
+</view>
+
+
+
+
 
 	<view class="about">
 		<view class="common_tit">
