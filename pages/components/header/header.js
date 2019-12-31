@@ -38,6 +38,7 @@ Component({
   data: { 
     // 导航开关 
     navIsShow: false,
+    currentIndexNav: 0,
     // floorstatus: false,
     navs: [
       {
@@ -78,6 +79,11 @@ Component({
 
   methods: { 
 
+    activeNav(e) {
+      this.setData({
+        currentIndexNav: e.target.dataset.index
+      })
+    },
     //控制导航开关
     controlNav() {
       this.setData({
