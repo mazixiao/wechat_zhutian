@@ -4,7 +4,7 @@
 <view class="videoItem">
     <!-- 公共头部 -->
     <view class='header'> 
-        <header></header>
+        <header navActive='7' ></header>
     </view>
 
     <!-- 视频列表 -->

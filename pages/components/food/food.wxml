@@ -3,7 +3,7 @@
 
 <view class="food">
     <view class='header'> 
-        <header></header>
+        <header navActive='3' ></header>
     </view>
     <view class='banner'>
       <image src="../../assets/img/banner.jpg" mode="widthFix"></image>

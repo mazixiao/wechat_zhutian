@@ -3,7 +3,7 @@
 
 <view class="search">
   <view class='header'> 
-      <header></header>
+      <header navActive='5' ></header>
   </view>
   <view class='banner'>
     <image src="../../assets/img/banner.jpg" mode="widthFix"></image>

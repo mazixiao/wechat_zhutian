@@ -14,20 +14,12 @@
 		<view class="shadow {{navIsShow ? 'active':''}}" bindtap="controlNav"></view>
 		<view class="bg {{navIsShow ? 'active':''}}">
 			<view class='con' wx:for="{{navs}}" wx:key="item.url">
-				 <navigator open-type="redirect" data-index="{{index}}" class="{{index === currentIndexNav ? 'active' : ''}}" url="{{item.url}}" hover-class="none">
+				 <navigator open-type="redirect" data-index="{{index}}" class="{{index === navActive ? 'active' : ''}}" url="{{item.url}}" hover-class="none">
 					{{item.text}}
 				 </navigator>
 			</view>
 		</view>
 	</view>
-
-
-
-
-
-
-
-
 	<!-- 返回顶部 -->
 	<view class="backTop" bindtap="goTop" hidden='{{floorstatus}}'>
 		<text class="icon iconfont icon-iconfonticontrianglecopy"></text>

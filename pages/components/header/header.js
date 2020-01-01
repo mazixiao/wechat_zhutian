@@ -5,9 +5,29 @@ Component({
     multipleSlots: true 
   }, 
 
+  /**
+   * 组件的属性列表
+   */
   properties: {
-    aaa: String
-  }, 
+    // 当前导航高亮
+    navActive: {
+      // 类型
+      type: Number,
+      // 默认值
+      value: 0
+    }
+  },
+
+  /**
+   * 组件挂载后执行
+   */
+  ready: function () {
+    // 当前导航高亮下标
+    console.log(this.data.navActive);
+   
+  },
+
+
 
   // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
   attached: function () {
@@ -95,13 +115,14 @@ Component({
       // console.log("bindchangeTag...")
     },
     onLoad: function (options) {
-      // console.log(options, '111');
+
       // 页面初始化 options为页面跳转所带来的参数
     },
     onReady: function () {
       // 页面渲染完成
     },
     onShow: function () {
+      console.log(11);
       // 页面显示
     },
     onHide: function () {

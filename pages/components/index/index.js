@@ -421,6 +421,8 @@ commit:function() {
     // console.log("bindchangeTag...")
   }, 
   onLoad:function(options){
+    console.log(this.route);
+    
     this.setData({
       aaa: this.route,
     });

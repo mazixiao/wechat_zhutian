@@ -3,7 +3,8 @@
 
 <view class="join">
     <view class='header'> 
-        <header aaa='{{aaa}}'></header>
+        <header navActive='1'></header>
+        <!-- <header commentCount='1'></header> -->
     </view>
     <view class='banner'>
       <image src="../../assets/img/banner.jpg" mode="widthFix"></image>

@@ -3,7 +3,7 @@
 
 <view class="news">
   <view class='header'> 
-      <header></header>
+      <header navActive='4' ></header>
   </view>
   <view class='banner'>
     <image src="../../assets/img/banner.jpg" mode="widthFix"></image>
